@@ -1,0 +1,23 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="COMET.7776ba98-0623-4bd6-b7e9-f5ae03cb3ede" Version="1.0" Language="en-US" Publisher="COmeting Made Easy &amp;amp; Transparent" />
+    <DisplayName>COMET</DisplayName>
+    <Description xml:space="preserve">From the beginning of our studies, we are taught the importance of quality comment practices. However, this step is commonly overlooked and given the least time in projects. COMET gives Visual Studio users an easier option to generate comments in their programs. Users can generate a comment template for their program with a click of a button, and simply fill in the prompted information.</Description>
+    <Icon>COMET Logo.png</Icon>
+    <PreviewImage>COMET Logo.png</PreviewImage>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">
+      <ProductArchitecture>amd64</ProductArchitecture>
+    </InstallationTarget>
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" />
+  </Dependencies>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,18.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="COMET.pkgdef" />
+  </Assets>
+</PackageManifest>

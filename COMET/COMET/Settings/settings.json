@@ -1,0 +1,46 @@
+﻿{
+  "settingsFullName": null,
+  "settingsInitials": null,
+  "names": {
+    "Created By": "Created_By",
+    "Events Handled": "Events_Handled",
+    "Event Raised": "Events_Wired",
+    "Exception Thrown": "Exception_Thrown",
+    "Exception Caught": "Exception_Caught",
+    "Purpose": "Purpose",
+    "Revise History": "Revise_History"
+  },
+  "colors": {
+    "InnerTag": "#FFB2CAB2",
+    "OuterTag": "#FF008000",
+    "OuterProperty": "#FF03C203",
+    "UserText": "#ffffff"
+  },
+  "toggles": {
+    "toggleClassCB": true,
+    "toggleClassPurpose": true,
+    "toggleClassRH": true,
+    "toggleStructCB": true,
+    "toggleStructEvents": true,
+    "toggleStructExcepts": true,
+    "toggleStructPurpose": true,
+    "toggleStructRH": true,
+    "toggleEnumCB": true,
+    "toggleEnumPurpose": true,
+    "toggleEnumRH": true,
+    "toggleFileCB": true,
+    "toggleFilePurpose": true,
+    "toggleFileRH": true,
+    "toggleMethodCB": true,
+    "toggleMethodEvents": true,
+    "toggleMethodExcepts": true,
+    "toggleMethodPurpose": true,
+    "toggleMethodRH": true,
+    "toggleNamespaceCB": true,
+    "toggleNamespacePurpose": true,
+    "toggleNamespaceRH": true,
+    "toggleOBJCB": true,
+    "toggleOBJPurpose": true,
+    "toggleOBJRH": true
+  }
+}

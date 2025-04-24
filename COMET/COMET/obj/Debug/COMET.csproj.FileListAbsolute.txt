@@ -1,0 +1,746 @@
+C:\Users\ajpic\source\repos\COMET\bin\Debug\COMET.dll
+C:\Users\ajpic\source\repos\COMET\bin\Debug\COMET.pdb
+C:\Users\ajpic\source\repos\COMET\bin\Debug\COMET.pkgdef
+C:\Users\ajpic\source\repos\COMET\bin\Debug\COMET.vsix
+C:\Users\ajpic\source\repos\COMET\bin\Debug\extension.vsixmanifest
+C:\Users\ajpic\source\repos\COMET\obj\Debug\COMET.csproj.AssemblyReference.cache
+C:\Users\ajpic\source\repos\COMET\obj\Debug\ToolWindow1Control.baml
+C:\Users\ajpic\source\repos\COMET\obj\Debug\ToolWindow1Control.g.cs
+C:\Users\ajpic\source\repos\COMET\obj\Debug\COMET_MarkupCompile.cache
+C:\Users\ajpic\source\repos\COMET\obj\Debug\COMET.g.resources
+C:\Users\ajpic\source\repos\COMET\obj\Debug\_EmptyResource.resources
+C:\Users\ajpic\source\repos\COMET\obj\Debug\COMET.csproj.GenerateResource.cache
+C:\Users\ajpic\source\repos\COMET\obj\Debug\COMETPackage.cto
+C:\Users\ajpic\source\repos\COMET\obj\Debug\resources.json
+C:\Users\ajpic\source\repos\COMET\obj\Debug\ctoFiles.json
+C:\Users\ajpic\source\repos\COMET\obj\Debug\mergeCto.cache
+C:\Users\ajpic\source\repos\COMET\obj\Debug\COMET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ajpic\source\repos\COMET\obj\Debug\COMET.csproj.CoreCompileInputs.cache
+C:\Users\ajpic\source\repos\COMET\obj\Debug\COMET.dll
+C:\Users\ajpic\source\repos\COMET\obj\Debug\COMET.pdb
+C:\Users\ajpic\source\repos\COMET\obj\Debug\COMET.pkgdef
+C:\Users\ajpic\source\repos\COMET\obj\Debug\COMET.latest.pkgdef
+C:\Users\ajpic\source\repos\COMET\obj\Debug\extension.vsixmanifest
+C:\Users\ajpic\source\repos\COMET\obj\Debug\files.json
+C:\Users\ajpic\source\repos\COMET\obj\Debug\createTemplateManifests.cache
+C:\Users\zach\Downloads\COMET\bin\Debug\COMET.dll
+C:\Users\zach\Downloads\COMET\bin\Debug\COMET.pdb
+C:\Users\zach\Downloads\COMET\bin\Debug\COMET.pkgdef
+C:\Users\zach\Downloads\COMET\bin\Debug\COMET.vsix
+C:\Users\zach\Downloads\COMET\bin\Debug\extension.vsixmanifest
+C:\Users\zach\Downloads\COMET\obj\Debug\COMET.csproj.AssemblyReference.cache
+C:\Users\zach\Downloads\COMET\obj\Debug\ToolWindow1Control.baml
+C:\Users\zach\Downloads\COMET\obj\Debug\ToolWindow1Control.g.cs
+C:\Users\zach\Downloads\COMET\obj\Debug\COMET_MarkupCompile.cache
+C:\Users\zach\Downloads\COMET\obj\Debug\COMET.g.resources
+C:\Users\zach\Downloads\COMET\obj\Debug\_EmptyResource.resources
+C:\Users\zach\Downloads\COMET\obj\Debug\COMET.csproj.GenerateResource.cache
+C:\Users\zach\Downloads\COMET\obj\Debug\COMETPackage.cto
+C:\Users\zach\Downloads\COMET\obj\Debug\resources.json
+C:\Users\zach\Downloads\COMET\obj\Debug\ctoFiles.json
+C:\Users\zach\Downloads\COMET\obj\Debug\mergeCto.cache
+C:\Users\zach\Downloads\COMET\obj\Debug\COMET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zach\Downloads\COMET\obj\Debug\COMET.csproj.CoreCompileInputs.cache
+C:\Users\zach\Downloads\COMET\obj\Debug\COMET.dll
+C:\Users\zach\Downloads\COMET\obj\Debug\COMET.pdb
+C:\Users\zach\Downloads\COMET\obj\Debug\COMET.pkgdef
+C:\Users\zach\Downloads\COMET\obj\Debug\COMET.latest.pkgdef
+C:\Users\zach\Downloads\COMET\obj\Debug\extension.vsixmanifest
+C:\Users\zach\Downloads\COMET\obj\Debug\files.json
+C:\Users\zach\Downloads\COMET\obj\Debug\createTemplateManifests.cache
+C:\Users\zach\Downloads\COMET\obj\Debug\VSCT.read.1.tlog
+C:\Users\zach\Downloads\COMET\obj\Debug\VSCT.write.1.tlog
+C:\Users\zach\Downloads\COMET\obj\Debug\_EmptyResource.resources.original
+C:\Users\ganno\Downloads\capstone\COMET\COMET\bin\Debug\COMET.dll
+C:\Users\ganno\Downloads\capstone\COMET\COMET\bin\Debug\COMET.pdb
+C:\Users\ganno\Downloads\capstone\COMET\COMET\bin\Debug\COMET.pkgdef
+C:\Users\ganno\Downloads\capstone\COMET\COMET\bin\Debug\COMET.vsix
+C:\Users\ganno\Downloads\capstone\COMET\COMET\bin\Debug\extension.vsixmanifest
+C:\Users\ganno\Downloads\capstone\COMET\COMET\obj\Debug\COMET.csproj.AssemblyReference.cache
+C:\Users\ganno\Downloads\capstone\COMET\COMET\obj\Debug\ToolWindow1Control.baml
+C:\Users\ganno\Downloads\capstone\COMET\COMET\obj\Debug\ToolWindow1Control.g.cs
+C:\Users\ganno\Downloads\capstone\COMET\COMET\obj\Debug\COMET_MarkupCompile.cache
+C:\Users\ganno\Downloads\capstone\COMET\COMET\obj\Debug\COMET.g.resources
+C:\Users\ganno\Downloads\capstone\COMET\COMET\obj\Debug\_EmptyResource.resources
+C:\Users\ganno\Downloads\capstone\COMET\COMET\obj\Debug\COMET.csproj.GenerateResource.cache
+C:\Users\ganno\Downloads\capstone\COMET\COMET\obj\Debug\COMETPackage.cto
+C:\Users\ganno\Downloads\capstone\COMET\COMET\obj\Debug\resources.json
+C:\Users\ganno\Downloads\capstone\COMET\COMET\obj\Debug\ctoFiles.json
+C:\Users\ganno\Downloads\capstone\COMET\COMET\obj\Debug\_EmptyResource.resources.original
+C:\Users\ganno\Downloads\capstone\COMET\COMET\obj\Debug\mergeCto.cache
+C:\Users\ganno\Downloads\capstone\COMET\COMET\obj\Debug\COMET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ganno\Downloads\capstone\COMET\COMET\obj\Debug\COMET.csproj.CoreCompileInputs.cache
+C:\Users\ganno\Downloads\capstone\COMET\COMET\obj\Debug\COMET.dll
+C:\Users\ganno\Downloads\capstone\COMET\COMET\obj\Debug\COMET.pdb
+C:\Users\ganno\Downloads\capstone\COMET\COMET\obj\Debug\COMET.pkgdef
+C:\Users\ganno\Downloads\capstone\COMET\COMET\obj\Debug\COMET.latest.pkgdef
+C:\Users\ganno\Downloads\capstone\COMET\COMET\obj\Debug\extension.vsixmanifest
+C:\Users\ganno\Downloads\capstone\COMET\COMET\obj\Debug\files.json
+C:\Users\ganno\Downloads\capstone\COMET\COMET\obj\Debug\createTemplateManifests.cache
+C:\Users\ganno\Downloads\Reorganizations\capstone\COMET\COMET\bin\Debug\COMET.dll
+C:\Users\ganno\Downloads\Reorganizations\capstone\COMET\COMET\bin\Debug\COMET.pdb
+C:\Users\ganno\Downloads\Reorganizations\capstone\COMET\COMET\bin\Debug\COMET.pkgdef
+C:\Users\ganno\Downloads\Reorganizations\capstone\COMET\COMET\bin\Debug\COMET.vsix
+C:\Users\ganno\Downloads\Reorganizations\capstone\COMET\COMET\bin\Debug\extension.vsixmanifest
+C:\Users\ganno\Downloads\Reorganizations\capstone\COMET\COMET\obj\Debug\COMET.csproj.AssemblyReference.cache
+C:\Users\ganno\Downloads\Reorganizations\capstone\COMET\COMET\obj\Debug\COMET_MarkupCompile.cache
+C:\Users\ganno\Downloads\Reorganizations\capstone\COMET\COMET\obj\Debug\COMET.g.resources
+C:\Users\ganno\Downloads\Reorganizations\capstone\COMET\COMET\obj\Debug\_EmptyResource.resources
+C:\Users\ganno\Downloads\Reorganizations\capstone\COMET\COMET\obj\Debug\COMET.csproj.GenerateResource.cache
+C:\Users\ganno\Downloads\Reorganizations\capstone\COMET\COMET\obj\Debug\COMETPackage.cto
+C:\Users\ganno\Downloads\Reorganizations\capstone\COMET\COMET\obj\Debug\resources.json
+C:\Users\ganno\Downloads\Reorganizations\capstone\COMET\COMET\obj\Debug\ctoFiles.json
+C:\Users\ganno\Downloads\Reorganizations\capstone\COMET\COMET\obj\Debug\mergeCto.cache
+C:\Users\ganno\Downloads\Reorganizations\capstone\COMET\COMET\obj\Debug\COMET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ganno\Downloads\Reorganizations\capstone\COMET\COMET\obj\Debug\COMET.csproj.CoreCompileInputs.cache
+C:\Users\ganno\Downloads\Reorganizations\capstone\COMET\COMET\obj\Debug\COMET.dll
+C:\Users\ganno\Downloads\Reorganizations\capstone\COMET\COMET\obj\Debug\COMET.pdb
+C:\Users\ganno\Downloads\Reorganizations\capstone\COMET\COMET\obj\Debug\COMET.pkgdef
+C:\Users\ganno\Downloads\Reorganizations\capstone\COMET\COMET\obj\Debug\COMET.latest.pkgdef
+C:\Users\ganno\Downloads\Reorganizations\capstone\COMET\COMET\obj\Debug\extension.vsixmanifest
+C:\Users\ganno\Downloads\Reorganizations\capstone\COMET\COMET\obj\Debug\files.json
+C:\Users\ganno\Downloads\Reorganizations\capstone\COMET\COMET\obj\Debug\createTemplateManifests.cache
+C:\Users\ganno\Downloads\Reorganizations\capstone\COMET\COMET\obj\Debug\ToolWindow\ToolWindow1Control.baml
+C:\Users\ganno\Downloads\Reorganizations\capstone\COMET\COMET\obj\Debug\ToolWindow\ToolWindow1Control.g.cs
+C:\Users\ganno\Downloads\Reorganizations\capstone\COMET\COMET\obj\Debug\_EmptyResource.resources.original
+C:\Users\ganno\Downloads\Reorganizations\capstone\COMET\COMET\obj\Debug\VSCT.read.1.tlog
+C:\Users\ganno\Downloads\Reorganizations\capstone\COMET\COMET\obj\Debug\VSCT.write.1.tlog
+C:\Users\ZachLocal\Source\Repos\capstone\COMET\COMET\bin\Debug\COMET.dll
+C:\Users\ZachLocal\Source\Repos\capstone\COMET\COMET\bin\Debug\COMET.pdb
+C:\Users\ZachLocal\Source\Repos\capstone\COMET\COMET\bin\Debug\COMET.pkgdef
+C:\Users\ZachLocal\Source\Repos\capstone\COMET\COMET\bin\Debug\COMET.vsix
+C:\Users\ZachLocal\Source\Repos\capstone\COMET\COMET\bin\Debug\extension.vsixmanifest
+C:\Users\ZachLocal\Source\Repos\capstone\COMET\COMET\obj\Debug\COMET.csproj.AssemblyReference.cache
+C:\Users\ZachLocal\Source\Repos\capstone\COMET\COMET\obj\Debug\ToolWindow\ToolWindow1Control.baml
+C:\Users\ZachLocal\Source\Repos\capstone\COMET\COMET\obj\Debug\ToolWindow\ToolWindow1Control.g.cs
+C:\Users\ZachLocal\Source\Repos\capstone\COMET\COMET\obj\Debug\COMET_MarkupCompile.cache
+C:\Users\ZachLocal\Source\Repos\capstone\COMET\COMET\obj\Debug\COMET.g.resources
+C:\Users\ZachLocal\Source\Repos\capstone\COMET\COMET\obj\Debug\_EmptyResource.resources
+C:\Users\ZachLocal\Source\Repos\capstone\COMET\COMET\obj\Debug\COMET.Resource1.resources
+C:\Users\ZachLocal\Source\Repos\capstone\COMET\COMET\obj\Debug\COMET.csproj.GenerateResource.cache
+C:\Users\ZachLocal\Source\Repos\capstone\COMET\COMET\obj\Debug\COMETPackage.cto
+C:\Users\ZachLocal\Source\Repos\capstone\COMET\COMET\obj\Debug\VSCT.read.1.tlog
+C:\Users\ZachLocal\Source\Repos\capstone\COMET\COMET\obj\Debug\VSCT.write.1.tlog
+C:\Users\ZachLocal\Source\Repos\capstone\COMET\COMET\obj\Debug\resources.json
+C:\Users\ZachLocal\Source\Repos\capstone\COMET\COMET\obj\Debug\ctoFiles.json
+C:\Users\ZachLocal\Source\Repos\capstone\COMET\COMET\obj\Debug\_EmptyResource.resources.original
+C:\Users\ZachLocal\Source\Repos\capstone\COMET\COMET\obj\Debug\mergeCto.cache
+C:\Users\ZachLocal\Source\Repos\capstone\COMET\COMET\obj\Debug\COMET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ZachLocal\Source\Repos\capstone\COMET\COMET\obj\Debug\COMET.csproj.CoreCompileInputs.cache
+C:\Users\ZachLocal\Source\Repos\capstone\COMET\COMET\obj\Debug\COMET.dll
+C:\Users\ZachLocal\Source\Repos\capstone\COMET\COMET\obj\Debug\COMET.pdb
+C:\Users\ZachLocal\Source\Repos\capstone\COMET\COMET\obj\Debug\COMET.pkgdef
+C:\Users\ZachLocal\Source\Repos\capstone\COMET\COMET\obj\Debug\COMET.latest.pkgdef
+C:\Users\ZachLocal\Source\Repos\capstone\COMET\COMET\obj\Debug\extension.vsixmanifest
+C:\Users\ZachLocal\Source\Repos\capstone\COMET\COMET\obj\Debug\files.json
+C:\Users\ZachLocal\Source\Repos\capstone\COMET\COMET\obj\Debug\createTemplateManifests.cache
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\bin\Debug\COMET.dll
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\bin\Debug\COMET.pdb
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\bin\Debug\COMET.pkgdef
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\bin\Debug\COMET.vsix
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\bin\Debug\extension.vsixmanifest
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\obj\Debug\COMET.csproj.AssemblyReference.cache
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\obj\Debug\ToolWindow\ToolWindow1Control.baml
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\obj\Debug\ToolWindow\ToolWindow1Control.g.cs
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\obj\Debug\COMET_MarkupCompile.cache
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\obj\Debug\COMET.g.resources
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\obj\Debug\_EmptyResource.resources
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\obj\Debug\COMET.csproj.GenerateResource.cache
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\obj\Debug\COMETPackage.cto
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\obj\Debug\resources.json
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\obj\Debug\ctoFiles.json
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\obj\Debug\mergeCto.cache
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\obj\Debug\COMET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\obj\Debug\COMET.csproj.CoreCompileInputs.cache
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\obj\Debug\COMET.dll
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\obj\Debug\COMET.pdb
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\obj\Debug\COMET.pkgdef
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\obj\Debug\COMET.latest.pkgdef
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\obj\Debug\extension.vsixmanifest
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\obj\Debug\files.json
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\obj\Debug\createTemplateManifests.cache
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\bin\Debug\System.Buffers.dll
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\bin\Debug\System.IO.Pipelines.dll
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\bin\Debug\System.Memory.dll
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\bin\Debug\System.Text.Json.dll
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\bin\Debug\System.ValueTuple.dll
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\obj\Debug\COMET.csproj.Up2Date
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\bin\Debug\Settings\SettingsManager.cs
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\bin\Debug\Settings\settings.json
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\bin\Debug\Settings\SettingsManager.cs
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\bin\Debug\Settings\settings.json
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\bin\Debug\COMET.dll
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\bin\Debug\COMET.pdb
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\bin\Debug\COMET.pkgdef
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\bin\Debug\COMET.vsix
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\bin\Debug\extension.vsixmanifest
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\bin\Debug\Syncfusion.Shared.WPF.dll
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\bin\Debug\System.Buffers.dll
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\bin\Debug\System.IO.Pipelines.dll
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\bin\Debug\System.Memory.dll
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\bin\Debug\System.Text.Json.dll
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\bin\Debug\System.ValueTuple.dll
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\obj\Debug\COMET.csproj.AssemblyReference.cache
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\obj\Debug\ToolWindow\ToolWindow1Control.baml
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\obj\Debug\ToolWindow\ToolWindow1Control.g.cs
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\obj\Debug\COMET_MarkupCompile.cache
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\obj\Debug\COMET.g.resources
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\obj\Debug\_EmptyResource.resources
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\obj\Debug\COMET.csproj.GenerateResource.cache
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\obj\Debug\COMETPackage.cto
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\obj\Debug\VSCT.read.1.tlog
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\obj\Debug\VSCT.write.1.tlog
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\obj\Debug\resources.json
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\obj\Debug\ctoFiles.json
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\obj\Debug\_EmptyResource.resources.original
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\obj\Debug\mergeCto.cache
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\obj\Debug\COMET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\obj\Debug\COMET.csproj.CoreCompileInputs.cache
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\obj\Debug\COMET.csproj.Up2Date
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\obj\Debug\COMET.dll
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\obj\Debug\COMET.pdb
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\obj\Debug\COMET.pkgdef
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\obj\Debug\COMET.latest.pkgdef
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\obj\Debug\extension.vsixmanifest
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\obj\Debug\files.json
+C:\Users\ajpic\Source\Repos\capstone\COMET\COMET\obj\Debug\createTemplateManifests.cache
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\ZachLocal\source\repos\zjsisco99\capstone\COMET\COMET\bin\Debug\Syncfusion.Shared.WPF.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\COMET Logo.png
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\Settings\SettingsManager.cs
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\Settings\settings.json
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\COMET.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\COMET.pdb
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\COMET.pkgdef
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\COMET.vsix
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\extension.vsixmanifest
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\Microsoft.CodeAnalysis.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\Microsoft.CodeAnalysis.pdb
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\Microsoft.CodeAnalysis.CSharp.pdb
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\Syncfusion.Shared.WPF.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\System.Buffers.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\System.Collections.Immutable.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\System.IO.Pipelines.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\System.Memory.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\System.Reflection.Metadata.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\System.Text.Json.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\bin\Debug\System.ValueTuple.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\obj\Debug\COMET.csproj.AssemblyReference.cache
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\obj\Debug\ToolWindow\ToolWindow1Control.baml
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\obj\Debug\ToolWindow\ToolWindow1Control.g.cs
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\obj\Debug\COMET_MarkupCompile.cache
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\obj\Debug\COMET.g.resources
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\obj\Debug\_EmptyResource.resources
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\obj\Debug\COMET.csproj.GenerateResource.cache
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\obj\Debug\COMETPackage.cto
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\obj\Debug\resources.json
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\obj\Debug\ctoFiles.json
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\obj\Debug\mergeCto.cache
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\obj\Debug\COMET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\obj\Debug\COMET.csproj.CoreCompileInputs.cache
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\obj\Debug\COMET.csproj.Up2Date
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\obj\Debug\COMET.dll
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\obj\Debug\COMET.pdb
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\obj\Debug\COMET.pkgdef
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\obj\Debug\COMET.latest.pkgdef
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\obj\Debug\extension.vsixmanifest
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\obj\Debug\files.json
+C:\Users\ZachLocal\Downloads\capstone-main\COMET\COMET\obj\Debug\createTemplateManifests.cache
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\COMET Logo.png
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\Settings\SettingsManager.cs
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\Settings\settings.json
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\COMET.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\COMET.pdb
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\COMET.pkgdef
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\COMET.vsix
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\extension.vsixmanifest
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\Microsoft.CodeAnalysis.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\Microsoft.CodeAnalysis.pdb
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\Microsoft.CodeAnalysis.CSharp.pdb
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\Syncfusion.Shared.WPF.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\System.Buffers.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\System.Collections.Immutable.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\System.IO.Pipelines.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\System.Memory.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\System.Reflection.Metadata.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\System.Text.Json.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\System.ValueTuple.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\COMET.csproj.AssemblyReference.cache
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\ToolWindow\ToolWindow1Control.baml
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\ToolWindow\ToolWindow1Control.g.cs
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\COMET_MarkupCompile.cache
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\COMET.g.resources
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\_EmptyResource.resources
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\COMET.csproj.GenerateResource.cache
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\COMETPackage.cto
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\resources.json
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\ctoFiles.json
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\mergeCto.cache
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\COMET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\COMET.csproj.CoreCompileInputs.cache
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\COMET.csproj.Up2Date
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\COMET.dll
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\COMET.pdb
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\COMET.pkgdef
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\COMET.latest.pkgdef
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\extension.vsixmanifest
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\files.json
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\createTemplateManifests.cache
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\_EmptyResource.resources.original
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\VSCT.read.1.tlog
+C:\Users\ajpic\Downloads\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\VSCT.write.1.tlog
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\COMET Logo.png
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\Settings\SettingsManager.cs
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\Settings\settings.json
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\COMET.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\COMET.pdb
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\COMET.pkgdef
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\COMET.vsix
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\extension.vsixmanifest
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\Microsoft.CodeAnalysis.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\Microsoft.CodeAnalysis.pdb
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\Microsoft.CodeAnalysis.CSharp.pdb
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\Syncfusion.Shared.WPF.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\System.Buffers.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\System.Collections.Immutable.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\System.IO.Pipelines.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\System.Memory.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\System.Reflection.Metadata.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\System.Text.Json.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\bin\Debug\System.ValueTuple.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\COMET.csproj.AssemblyReference.cache
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\ToolWindow\ToolWindow1Control.baml
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\ToolWindow\ToolWindow1Control.g.cs
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\COMET_MarkupCompile.cache
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\COMET.g.resources
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\_EmptyResource.resources
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\COMET.csproj.GenerateResource.cache
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\COMETPackage.cto
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\resources.json
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\ctoFiles.json
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\mergeCto.cache
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\COMET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\COMET.csproj.CoreCompileInputs.cache
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\COMET.csproj.Up2Date
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\COMET.dll
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\COMET.pdb
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\COMET.pkgdef
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\COMET.latest.pkgdef
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\extension.vsixmanifest
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\files.json
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\createTemplateManifests.cache
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\COMET Logo.png
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\Settings\SettingsManager.cs
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\Settings\settings.json
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\COMET.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\COMET.pdb
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\COMET.pkgdef
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\COMET.vsix
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\extension.vsixmanifest
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\Microsoft.CodeAnalysis.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\Microsoft.CodeAnalysis.pdb
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\Microsoft.CodeAnalysis.CSharp.pdb
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\Syncfusion.Shared.WPF.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\System.Buffers.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\System.Collections.Immutable.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\System.IO.Pipelines.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\System.Memory.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\System.Reflection.Metadata.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\System.Text.Json.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\bin\Debug\System.ValueTuple.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\obj\Debug\COMET.csproj.AssemblyReference.cache
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\obj\Debug\ToolWindow\ToolWindow1Control.baml
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\obj\Debug\ToolWindow\ToolWindow1Control.g.cs
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\obj\Debug\COMET_MarkupCompile.cache
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\obj\Debug\COMET.g.resources
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\obj\Debug\_EmptyResource.resources
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\obj\Debug\COMET.csproj.GenerateResource.cache
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\obj\Debug\COMETPackage.cto
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\obj\Debug\resources.json
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\obj\Debug\ctoFiles.json
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\obj\Debug\mergeCto.cache
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\obj\Debug\COMET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\obj\Debug\COMET.csproj.CoreCompileInputs.cache
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\obj\Debug\COMET.csproj.Up2Date
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\obj\Debug\COMET.dll
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\obj\Debug\COMET.pdb
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\obj\Debug\COMET.pkgdef
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\obj\Debug\COMET.latest.pkgdef
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\obj\Debug\extension.vsixmanifest
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\obj\Debug\files.json
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\obj\Debug\createTemplateManifests.cache
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\COMET Logo.png
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\Settings\SettingsManager.cs
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\Settings\settings.json
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\COMET.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\COMET.pdb
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\COMET.pkgdef
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\COMET.vsix
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\extension.vsixmanifest
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\Microsoft.CodeAnalysis.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\Microsoft.CodeAnalysis.pdb
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\Microsoft.CodeAnalysis.CSharp.pdb
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\Syncfusion.Shared.WPF.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\System.Buffers.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\System.Collections.Immutable.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\System.IO.Pipelines.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\System.Memory.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\System.Reflection.Metadata.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\System.Text.Json.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\bin\Debug\System.ValueTuple.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\obj\Debug\COMET.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\obj\Debug\ToolWindow\ToolWindow1Control.baml
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\obj\Debug\ToolWindow\ToolWindow1Control.g.cs
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\obj\Debug\COMET_MarkupCompile.cache
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\obj\Debug\COMET.g.resources
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\obj\Debug\_EmptyResource.resources
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\obj\Debug\COMET.csproj.GenerateResource.cache
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\obj\Debug\COMETPackage.cto
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\obj\Debug\resources.json
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\obj\Debug\ctoFiles.json
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\obj\Debug\mergeCto.cache
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\obj\Debug\COMET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\obj\Debug\COMET.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\obj\Debug\COMET.csproj.CopyComplete
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\obj\Debug\COMET.dll
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\obj\Debug\COMET.pdb
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\obj\Debug\COMET.pkgdef
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\obj\Debug\COMET.latest.pkgdef
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\obj\Debug\extension.vsixmanifest
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\obj\Debug\files.json
+C:\Users\HP\Documents\GitHub\capstone\COMET\COMET\obj\Debug\createTemplateManifests.cache
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\obj\Debug\VSCT.read.1.tlog
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\obj\Debug\VSCT.write.1.tlog
+C:\Users\ajpic\OneDrive\Documents\clone\capstone\COMET\COMET\obj\Debug\_EmptyResource.resources.original
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\COMET Logo.png
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\Settings\SettingsManager.cs
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\Settings\settings.json
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\COMET.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\COMET.pdb
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\COMET.pkgdef
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\COMET.vsix
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\extension.vsixmanifest
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\Microsoft.CodeAnalysis.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\Microsoft.CodeAnalysis.pdb
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\Microsoft.CodeAnalysis.CSharp.pdb
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\Syncfusion.Shared.WPF.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\System.Buffers.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\System.Collections.Immutable.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\System.IO.Pipelines.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\System.Memory.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\System.Reflection.Metadata.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\System.Text.Json.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\bin\Debug\System.ValueTuple.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\obj\Debug\COMET.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\obj\Debug\ToolWindow\ToolWindow1Control.baml
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\obj\Debug\ToolWindow\ToolWindow1Control.g.cs
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\obj\Debug\COMET_MarkupCompile.cache
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\obj\Debug\COMET.g.resources
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\obj\Debug\_EmptyResource.resources
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\obj\Debug\COMET.csproj.GenerateResource.cache
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\obj\Debug\COMETPackage.cto
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\obj\Debug\resources.json
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\obj\Debug\ctoFiles.json
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\obj\Debug\mergeCto.cache
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\obj\Debug\COMET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\obj\Debug\COMET.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\obj\Debug\COMET.csproj.CopyComplete
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\obj\Debug\COMET.dll
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\obj\Debug\COMET.pdb
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\obj\Debug\COMET.pkgdef
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\obj\Debug\COMET.latest.pkgdef
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\obj\Debug\extension.vsixmanifest
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\obj\Debug\files.json
+C:\Users\HP\Documents\GitHub\Capstone 2\capstone\COMET\COMET\obj\Debug\createTemplateManifests.cache
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\VSCT.read.1.tlog
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\VSCT.write.1.tlog
+C:\Users\ZachLocal\Downloads\capstone-ImprovedGeneration\capstone-ImprovedGeneration\COMET\COMET\obj\Debug\_EmptyResource.resources.original
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\COMET Logo.png
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\Settings\SettingsManager.cs
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\Settings\settings.json
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\COMET.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\COMET.pdb
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\COMET.pkgdef
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\COMET.vsix
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\extension.vsixmanifest
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\Microsoft.CodeAnalysis.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\Microsoft.CodeAnalysis.pdb
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\Microsoft.CodeAnalysis.CSharp.pdb
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\Syncfusion.Shared.WPF.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\System.Buffers.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\System.Collections.Immutable.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\System.IO.Pipelines.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\System.Memory.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\System.Reflection.Metadata.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\System.Text.Json.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\bin\Debug\System.ValueTuple.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\obj\Debug\COMET.csproj.AssemblyReference.cache
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\obj\Debug\ToolWindow\ToolWindow1Control.baml
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\obj\Debug\ToolWindow\ToolWindow1Control.g.cs
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\obj\Debug\COMET_MarkupCompile.cache
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\obj\Debug\COMET.g.resources
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\obj\Debug\_EmptyResource.resources
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\obj\Debug\COMET.csproj.GenerateResource.cache
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\obj\Debug\COMETPackage.cto
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\obj\Debug\resources.json
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\obj\Debug\ctoFiles.json
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\obj\Debug\mergeCto.cache
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\obj\Debug\COMET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\obj\Debug\COMET.csproj.CoreCompileInputs.cache
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\obj\Debug\COMET.csproj.Up2Date
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\obj\Debug\COMET.dll
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\obj\Debug\COMET.pdb
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\obj\Debug\COMET.pkgdef
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\obj\Debug\COMET.latest.pkgdef
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\obj\Debug\extension.vsixmanifest
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\obj\Debug\files.json
+C:\Users\ajpic\OneDrive\Documents\cloneZACH\capstone\COMET\COMET\obj\Debug\createTemplateManifests.cache
