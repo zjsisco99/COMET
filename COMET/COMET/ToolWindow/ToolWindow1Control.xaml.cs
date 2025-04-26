@@ -33,6 +33,8 @@ using Color = System.Windows.Media.Color;
 using Brush = System.Windows.Media.Brush;
 using System.Collections.Generic;
 using COMET.Resources;
+using Newtonsoft.Json.Linq;
+using System.Reflection;
 
 namespace COMET
 {
@@ -1034,6 +1036,7 @@ namespace COMET
                         continue;
 
                     InsertConstructorComment(ctorNode);
+
                 }
             }
 
@@ -1048,60 +1051,120 @@ namespace COMET
 
             var dte = getDTE();
             if (dte?.ActiveDocument == null) return;
-
-            TextDocument textDoc = refreshTextDoc(dte);
+            var activeDoc = dte.ActiveDocument;
+            string fileName = activeDoc.FullName;
+            var textDoc = refreshTextDoc(dte);
             EditPoint editPoint = textDoc.CreateEditPoint();
 
             var span = ctor.GetLocation().GetMappedLineSpan();
             int row = span.StartLinePosition.Line + 1;
-            int offset = span.StartLinePosition.Character;
-            if (offset == 0) offset = 1;
+            int columnOffset = span.StartLinePosition.Character;
+            if (columnOffset == 0) columnOffset = 1;
 
-            if (!TryMoveToLineAndOffset(textDoc, editPoint, row, offset)) return;
+            if (!TryMoveToLineAndOffset(textDoc, editPoint, row, columnOffset)) return;
 
-            string indent = new string(' ', offset - 1);
+            string indent = new string(' ', columnOffset - 1);
 
-            // ===== BUILD DYNAMIC COMMENT =====
+            // ========== BUILD DYNAMIC CONTENT ==========
+
             string paramStr = string.Join(", ", ctor.ParameterList.Parameters.Select(p => p.Identifier.Text));
             string typeStr = string.Join("|", ctor.ParameterList.Parameters.Select(p => p.Type.ToString()));
-            string newComment = BuildConstructorCommentText(sm, ctor.Identifier.Text, indent, paramStr, typeStr);
 
-            // ===== CHECK IF COMMENT EXISTS AND NEEDS UPDATE =====
+
+            List<string> handledEvents = new List<string>();
+          //  GetHandledEvents(ctor, fileName, out handledEvents);
+
+            List<string> wiredEvents=new List<string>();
+           // doesWireEventHandler(method, out wiredEvents);
+
+            var thrownTypes = ctor.DescendantNodes().OfType<ThrowStatementSyntax>()
+                .Select(t => t.Expression is ObjectCreationExpressionSyntax o ? o.Type.ToString() : "Exception").Distinct().ToList();
+
+            var caughtTypes = ctor.DescendantNodes().OfType<CatchClauseSyntax>()
+                .Select(c => c.Declaration?.Type.ToString() ?? "Exception").Distinct().ToList();
+
+            // ========== EXTRACT OLD VALUES ==========
+
+
             var leadingTrivia = ctor.GetLeadingTrivia();
             var docTrivia = leadingTrivia.FirstOrDefault(t => t.Kind() == SyntaxKind.SingleLineDocumentationCommentTrivia);
+            List<string> userContent = new List<string>();
+            string newPreview = "";
 
-            bool needsUpdate = true;
             if (docTrivia != default)
             {
                 string existing = docTrivia.ToFullString().Trim();
-                if (NormalizeComment(existing) == NormalizeComment(newComment))
-                {
-                    needsUpdate = false;
-                }
-                else
-                {
-                    // Delete the old comment
-                    int deleteOffsetStart = span.StartLinePosition.Line;
-                    var commentLineStart = textDoc.CreateEditPoint();
-                    commentLineStart.MoveToLineAndOffset(deleteOffsetStart, 1);
 
-                    for (int i = deleteOffsetStart - 1; i >= 1; i--)
-                    {
-                        string lineText = textDoc.CreateEditPoint().GetLines(i, i + 1).Trim();
-                        if (!lineText.StartsWith("///"))
-                            break;
-                        commentLineStart.MoveToLineAndOffset(i, 1);
-                    }
+                // === Step 1: Extract current (custom) section names ===
+                string tagPurpose = sm.getName("Purpose");
+                string tagRevise = sm.getName("Revise History");
+                string tagCreatedBy = sm.getName("Created By");
+                string tagWired = sm.getName("Event Raised");
+                string tagHandled = sm.getName("Events Handled");
+                string tagThrown = sm.getName("Exception Thrown");
+                string tagCaught = sm.getName("Exception Caught");
 
-                    EditPoint commentEnd = commentLineStart.CreateEditPoint();
-                    commentEnd.MoveToLineAndOffset(row, offset);
-                    commentLineStart.Delete(commentEnd);
+
+                // === Step 2: Extract any existing user-entered content between tags ===
+                string userPurpose = ExtractInnerTagContent(textDoc, row, "Purpose", tagPurpose);
+                string userRevise = ExtractInnerTagContent(textDoc, row, "Revision History", tagRevise);
+                string userCreatedBy = ExtractInnerTagContent(textDoc, row, "Created By", tagCreatedBy);
+                string oldParameters = ExtractInnerTagContent(textDoc, row, "Parameters", "Parameters");
+                string wired = ExtractInnerTagContent(textDoc, row, "Event Raised", tagWired);
+                string handled = ExtractInnerTagContent(textDoc, row, "Events Handled", tagHandled);
+                string thrown = ExtractInnerTagContent(textDoc, row, "Exception Thrown", tagThrown);
+                string caught = ExtractInnerTagContent(textDoc, row, "Exception Caught", tagCaught);
+
+                //add to list to pass to BuildMethodCommentText
+                userContent.Add(userCreatedBy);
+                userContent.Add(userPurpose);
+                userContent.Add(oldParameters);
+                userContent.Add(wired);
+               userContent.Add(handled);
+                userContent.Add(thrown);
+                userContent.Add(caught);
+                userContent.Add(userRevise);
+
+
+                //  newPreview = BuildMethodCommentText(sm, method.Identifier.Text, indent, paramStr, typeStr,
+                //wiredEvents, handledEvents, thrownTypes, caughtTypes, fileName, userContent);
+
+                string newParamStr = attachTypesToParams(paramStr, typeStr, indent);
+                string correctFormatStr = removeNewLines(newParamStr);
+                string newWiredStr = EventsUpdater.UpdateEvents(wired, wiredEvents, indent);
+                string newHandledStr = EventsUpdater.UpdateEvents(handled, handledEvents, indent);
+                string newThrown = EventsUpdater.UpdateEvents(thrown, thrownTypes, indent);
+                string newCaught = EventsUpdater.UpdateEvents(caught, caughtTypes, indent);
+
+                newPreview = BuildMethodCommentText(sm, ctor.Identifier.Text, indent, ParametersUpdater.UpdateParameters(oldParameters, correctFormatStr, indent), typeStr,
+                        wiredEvents, handledEvents, thrownTypes, caughtTypes, fileName, userContent, newWiredStr, newHandledStr, newThrown, newCaught);
+
+
+
+                // Delete old comment
+                int deleteLine = row;
+                EditPoint commentStart = textDoc.CreateEditPoint();
+                commentStart.MoveToLineAndOffset(deleteLine, 1);
+
+                for (int i = deleteLine - 1; i >= 1; i--)
+                {
+                    string lineAbove = textDoc.CreateEditPoint().GetLines(i, i + 1).Trim();
+                    if (!lineAbove.StartsWith("///"))
+                        break;
+                    commentStart.MoveToLineAndOffset(i, 1);
                 }
+
+                EditPoint commentEnd = textDoc.CreateEditPoint();
+                commentEnd.MoveToLineAndOffset(row, columnOffset);
+                commentStart.Delete(commentEnd);
+                editPoint.Insert(newPreview);
+
             }
-
-            if (needsUpdate)
+            else
             {
-                editPoint.Insert(newComment);
+                newPreview = BuildMethodCommentText(sm, ctor.Identifier.Text, indent, paramStr, typeStr,
+                    wiredEvents, handledEvents, thrownTypes, caughtTypes, fileName, userContent, "", "", "", "");
+                editPoint.Insert(newPreview);
                 dte.Documents.SaveAll();
             }
         }
@@ -2476,7 +2539,7 @@ namespace COMET
             string updated = input.Replace("///", "`");
             return updated;
         }
-
+      
         private void btnUpdateAllTags_Click(object sender, RoutedEventArgs e)
         {
             SettingsManager sm = new SettingsManager();

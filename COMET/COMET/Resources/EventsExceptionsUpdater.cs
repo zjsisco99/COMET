@@ -111,7 +111,7 @@ namespace COMET.Resources
 
                     // Add additional description lines
                     for (int j = 1; j < desc.Count; j++)
-                        sb.AppendLine($"{indent}///    {desc[j]}");
+                        sb.AppendLine($"{indents}///    {desc[j]}");
                 }
                 return sb.ToString().TrimEnd('\n');
             }
@@ -121,27 +121,36 @@ namespace COMET.Resources
 
             if (updatedEventList.Count <= currentEventList.Count)
             {
-                // Update names, keep descriptions
-                for (int i = 0; i < updatedEventList.Count; i++)
+                // Update names, transfer descriptions only for matching event names
+                foreach (var updatedEvent in updatedEventList)
                 {
-                    updatedEventList[i].Description = currentEventList[i].Description;
+                    // Find a current event with the same name
+                    var matchingCurrentEvent = currentEventList.FirstOrDefault(e => e.Name == updatedEvent.Name);
+                    if (matchingCurrentEvent != null)
+                    {
+                        // Transfer the description from the matching current event
+                        updatedEvent.Description = matchingCurrentEvent.Description;
+                    }
+                    // If no match, updatedEvent.Description remains as is (empty)
                 }
             }
             else
             {
-                // Copy descriptions for existing events, leave new ones empty
-                for (int i = 0; i < currentEventList.Count; i++)
+                // Copy descriptions for matching events, leave new ones as is
+                foreach (var updatedEvent in updatedEventList)
                 {
-                    updatedEventList[i].Description = currentEventList[i].Description;
-                }
-                // New events will have empty descriptions
-                for (int i = currentEventList.Count; i < updatedEventList.Count; i++)
-                {
-                    updatedEventList[i].Description = new List<string>();
+                    // Find a current event with the same name
+                    var matchingCurrentEvent = currentEventList.FirstOrDefault(e => e.Name == updatedEvent.Name);
+                    if (matchingCurrentEvent != null)
+                    {
+                        // Transfer the description from the matching current event
+                        updatedEvent.Description = matchingCurrentEvent.Description;
+                    }
+                    // New events or non-matching names keep their descriptions (empty)
                 }
             }
 
-            return $"{BuildEvents(updatedEventList, currentEventList, indent)}";
+            return $"{BuildEvents(updatedEventList, null, indent)}";
         }
     }
 }

@@ -4,7 +4,7 @@
   "names": {
     "Created By": "Created_By",
     "Events Handled": "Events_Handled",
-    "Event Raised": "Events_Wired",
+    "Event Raised": "Event_Raised",
     "Exception Thrown": "Exception_Thrown",
     "Exception Caught": "Exception_Caught",
     "Purpose": "Purpose",

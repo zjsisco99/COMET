@@ -16162,17 +16162,17 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ZachLocal\\.nuget\\packages\\": {},
+    "C:\\Users\\ajpic\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ZachLocal\\Downloads\\capstone-ImprovedGeneration(1)\\capstone-ImprovedGeneration\\COMET\\COMET\\COMET.csproj",
+      "projectUniqueName": "C:\\Users\\ajpic\\OneDrive\\Documents\\cloneZACH\\capstone\\COMET\\COMET\\COMET.csproj",
       "projectName": "COMET",
-      "projectPath": "C:\\Users\\ZachLocal\\Downloads\\capstone-ImprovedGeneration(1)\\capstone-ImprovedGeneration\\COMET\\COMET\\COMET.csproj",
-      "packagesPath": "C:\\Users\\ZachLocal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ZachLocal\\Downloads\\capstone-ImprovedGeneration(1)\\capstone-ImprovedGeneration\\COMET\\COMET\\obj\\",
+      "projectPath": "C:\\Users\\ajpic\\OneDrive\\Documents\\cloneZACH\\capstone\\COMET\\COMET\\COMET.csproj",
+      "packagesPath": "C:\\Users\\ajpic\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ajpic\\OneDrive\\Documents\\cloneZACH\\capstone\\COMET\\COMET\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "UsingMicrosoftNETSdk": false,
@@ -16180,7 +16180,7 @@
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ZachLocal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ajpic\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

@@ -22,6 +22,7 @@ namespace COMET.Resources
         /// </summary>
         /// <param name="currentParams">Text for current parameters, e.g., "/// sender(object): the text/// more text/// e(EventArgs): thee text/// more text".</param>
         /// <param name="updatedParams">Text for updated parameters, e.g., "/// param1(int): /// param2(string):".</param>
+        /// <param name="indent">The indentation string to use for formatting the output.</param>
         /// <returns>The complete updated <Parameters> tag with newlines added.</returns>
         public static string UpdateParameters(string currentParams, string updatedParams, string indent)
         {
@@ -78,12 +79,12 @@ namespace COMET.Resources
                     var desc = (referenceParams != null && i < referenceParams.Count) ? referenceParams[i].Description : param.Description;
                     sb.Append($"{indents}///    {param.Name}({param.Type}):");
                     if (desc.Count > 0)
-                        sb.Append($"{desc[0]}");
+                        sb.Append($" {desc[0]}");
                     sb.AppendLine(); // Add newline after parameter line
 
                     // Add additional description lines
                     for (int j = 1; j < desc.Count; j++)
-                        sb.AppendLine($"{indent}///    {desc[j]}");
+                        sb.AppendLine($"{indents}///    {desc[j]}");
                 }
                 return sb.ToString().TrimEnd('\n');
             }
@@ -93,27 +94,36 @@ namespace COMET.Resources
 
             if (updatedParamList.Count <= currentParamList.Count)
             {
-                // Update names and types, keep descriptions
-                for (int i = 0; i < updatedParamList.Count; i++)
+                // Update names and types, transfer descriptions only for matching parameter names
+                foreach (var updatedParam in updatedParamList)
                 {
-                    updatedParamList[i].Description = currentParamList[i].Description;
+                    // Find a current parameter with the same name
+                    var matchingCurrentParam = currentParamList.FirstOrDefault(p => p.Name == updatedParam.Name);
+                    if (matchingCurrentParam != null)
+                    {
+                        // Transfer the description from the matching current parameter
+                        updatedParam.Description = matchingCurrentParam.Description;
+                    }
+                    // If no match, updatedParam.Description remains as is (empty or from updatedParams)
                 }
             }
             else
             {
-                // Copy descriptions for existing parameters, leave new ones empty
-                for (int i = 0; i < currentParamList.Count; i++)
+                // Copy descriptions for matching parameters, leave new ones as is
+                foreach (var updatedParam in updatedParamList)
                 {
-                    updatedParamList[i].Description = currentParamList[i].Description;
-                }
-                // New parameters will have empty descriptions
-                for (int i = currentParamList.Count; i < updatedParamList.Count; i++)
-                {
-                    updatedParamList[i].Description = new List<string>();
+                    // Find a current parameter with the same name
+                    var matchingCurrentParam = currentParamList.FirstOrDefault(p => p.Name == updatedParam.Name);
+                    if (matchingCurrentParam != null)
+                    {
+                        // Transfer the description from the matching current parameter
+                        updatedParam.Description = matchingCurrentParam.Description;
+                    }
+                    // New parameters or non-matching names keep their descriptions (empty or from updatedParams)
                 }
             }
 
-            return $"/// <Parameters>\n{BuildParameters(updatedParamList, currentParamList,indent)}\n{indent}/// </Parameters>\n";
+            return $"/// <Parameters>\n{BuildParameters(updatedParamList, null, indent)}\n{indent}/// </Parameters>\n";
         }
     }
 }

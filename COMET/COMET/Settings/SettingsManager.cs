@@ -28,7 +28,7 @@ namespace COMET.Settings
             {
                 {"Created By", "Created_By"},
                 {"Events Handled", "Events_Handled"},
-                {"Event Raised", "Events_Wired"},
+                {"Event Raised", "Event_Raised"},
                 {"Exception Thrown", "Exception_Thrown"},
                 {"Exception Caught", "Exception_Caught"},
                 {"Purpose", "Purpose"},
@@ -154,7 +154,7 @@ namespace COMET.Settings
             this.setColor("UserText", "#ffffff");
             this.setName("Created By", "Created_By");
             this.setName("Events Handled", "Events_Handled");
-            this.setName("Event Raised", "Events_Wired");
+            this.setName("Event Raised", "Event_Raised");
             this.setName("Exception Thrown", "Exception_Thrown");
             this.setName("Exception Caught", "Exception_Caught");
             this.setName("Purpose", "Purpose");
