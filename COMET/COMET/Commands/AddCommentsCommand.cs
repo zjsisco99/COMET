@@ -9,15 +9,57 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System.Linq;
 using Task = System.Threading.Tasks.Task;
 using System.Threading.Tasks;
+/// <FLOWERBOX file="AddCommentsCommand.cs">
+/// <Created_By>
+/// COMET DEV TEAM
+/// </Created_By>
+/// <Purpose>
+/// Adding comments to methods, properties, classes, enums, structs, and namespaces.
+/// </Purpose>
+/// <Revise_History>
+/// 4/27/2025 - Initial release
+/// </Revise_History>
+/// </FLOWERBOX>
 
+/// <NAMESPACE name="COMET">
+/// <Created_By name="" date="04/27/2025"> 
+///
+/// </Created_By>
+/// <Revise_History>
+/// 4/27/2025 - Initial release
+/// </Revise_History>
+/// </NAMESPACE>
 namespace COMET
 {
+    /// <CLASS name="CommentMethodCommand">
+    /// <Created_By>
+    /// COMET DEV TEAM
+    /// </Created_By>
+    /// <Revise_History>
+    /// 4/27/2025 - Initial release
+    /// </Revise_History>
+    /// </CLASS>
     internal sealed class CommentMethodCommand
     {
         public const int CommandId = 0x0200;
         public static readonly Guid CommandSet = new Guid("95db4ddb-cbc1-4e37-85fe-538c13eb0bda");
         private readonly AsyncPackage _package;
 
+        /// <METHOD name="CommentMethodCommand">
+        /// <Created_By name="" date="04/27/2025"> 
+        ///
+        /// </Created_By>
+        /// <Purpose> 
+        /// Adds the command to the command service.
+        /// </Purpose>
+        /// <Parameters> 
+        ///     package(AsyncPackage):
+        ///     commandService(OleMenuCommandService):
+        /// </Parameters>
+        /// <Revise_History>
+        /// 4/27/2025 - Initial release
+        /// </Revise_History>
+        /// </METHOD>
         private CommentMethodCommand(AsyncPackage package, OleMenuCommandService commandService)
         {
             _package = package ?? throw new ArgumentNullException(nameof(package));
@@ -27,6 +69,20 @@ namespace COMET
             commandService.AddCommand(menuItem);
         }
 
+        /// <METHOD name="InitializeAsync">
+        /// <Created_By name="" date="04/27/2025"> 
+        ///
+        /// </Created_By>
+        /// <Purpose> 
+        /// Switches to MainThread and gets the command service.
+        /// </Purpose>
+        /// <Parameters> 
+        ///     package(AsyncPackage):
+        /// </Parameters>
+        /// <Revise_History>
+        /// 4/27/2025 - Initial release
+        /// </Revise_History>
+        /// </METHOD>
         public static async Task InitializeAsync(AsyncPackage package)
         {
             await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
@@ -34,6 +90,23 @@ namespace COMET
                 return;
             new CommentMethodCommand(package, commandService);
         }
+        /// <METHOD name="EnsureToolWindowControlAsync">
+        /// <Created_By name="" date="04/27/2025"> 
+        ///
+        /// </Created_By>
+        /// <Purpose> 
+        /// Ensures the tool window control is created and returns it.
+        /// </Purpose>
+        /// <Parameters> 
+        ///
+        /// </Parameters>
+        /// <Exception_Thrown> 
+        ///     NotSupportedException:
+        /// </Exception_Thrown>
+        /// <Revise_History> 
+        ///
+        /// </Revise_History>
+        /// </METHOD>
         private async Task<ToolWindow1Control> EnsureToolWindowControlAsync()
         {
             await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
@@ -51,6 +124,21 @@ namespace COMET
             return control;
         }
 
+        /// <METHOD name="Execute">
+        /// <Created_By name="" date="04/27/2025"> 
+        ///
+        /// </Created_By>
+        /// <Purpose> 
+        /// Executes the command to add comments to the code.
+        /// </Purpose>
+        /// <Parameters> 
+        ///     sender(object):
+        ///     e(EventArgs):
+        /// </Parameters>
+        /// <Revise_History> 
+        ///
+        /// </Revise_History>
+        /// </METHOD>
         private async void Execute(object sender, EventArgs e)
         {
             await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();

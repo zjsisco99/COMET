@@ -4,26 +4,69 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+/// <FLOWERBOX file="ParametersUpdater.cs">
+/// <Created_By>
+/// COMET DEV TEAM
+/// </Created_By>
+/// <Purpose>
+/// Update parameters in the code.
+/// </Purpose>
+/// <Revise_History>
+/// 4/27/2025 - Initial release
+/// </Revise_History>
+/// </FLOWERBOX>
 
+/// <NAMESPACE name="COMET.Resources">
+/// <Purpose>
+/// Namespace for COMET resources.
+/// </Purpose>
+/// </NAMESPACE>
 namespace COMET.Resources
 {
+    /// <CLASS name="ParametersUpdater">
+    /// <Purpose>
+    ///  Class to update parameters in the code.
+    /// </Purpose>
+    /// </CLASS>
     public class ParametersUpdater
     {
+        /// <CLASS name="Parameter">
+        /// <Purpose>
+        /// Class to represent a parameter.
+        /// </Purpose>
+        /// </CLASS>
         public class Parameter
         {
+            /// <PROPERTY name="Name">
+            /// <Purpose>
+            /// Name of the parameter.
+            /// </Purpose>
+            /// </PROPERTY>
             public string Name { get; set; }
+            /// <PROPERTY name="Type">
+            /// <Purpose>
+            /// Datatype of the parameter.
+            /// </Purpose>
+            /// </PROPERTY>
             public string Type { get; set; }
+            /// <PROPERTY name="Description">
+            /// <Purpose>
+            /// Description of the parameter.
+            /// </Purpose>
+            /// </PROPERTY>
             public List<string> Description { get; set; } = new List<string>();
         }
 
-        /// <summary>
-        /// Updates the XML documentation comment's Parameters tag based on the provided current and updated parameter texts.
-        /// Assumes input strings are single-line with entries prefixed by '///', representing parameters and description lines.
-        /// </summary>
-        /// <param name="currentParams">Text for current parameters, e.g., "/// sender(object): the text/// more text/// e(EventArgs): thee text/// more text".</param>
-        /// <param name="updatedParams">Text for updated parameters, e.g., "/// param1(int): /// param2(string):".</param>
-        /// <param name="indent">The indentation string to use for formatting the output.</param>
-        /// <returns>The complete updated <Parameters> tag with newlines added.</returns>
+        /// <METHOD name="UpdateParameters">
+        /// <Purpose> 
+        /// Updates the parameters in the code.
+        /// </Purpose>
+        /// <Parameters>
+        ///    currentParams(string):
+        ///    updatedParams(string):
+        ///    indent(string):
+        /// </Parameters>
+        /// </METHOD>
         public static string UpdateParameters(string currentParams, string updatedParams, string indent)
         {
             List<Parameter> ParseParameters(string paramsText)

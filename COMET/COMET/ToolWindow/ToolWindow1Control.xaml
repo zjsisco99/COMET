@@ -62,7 +62,7 @@
             <TextBox x:Name="txtInitials" HorizontalAlignment="Left" Margin="99,256,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="191" RenderTransformOrigin="0.175,-1.455"/>
             <Label x:Name="lblInitials" Content="Username:" HorizontalAlignment="Left" Margin="13,252,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.346,0.016" Height="26" Width="66" FontSize="11"/>
         </Grid>
-        <Grid x:Name="grdSectionToggleGrid" Grid.Row="1" Margin="0,0,0,-179" Visibility="Visible">
+        <Grid x:Name="grdSectionToggleGrid" Grid.Row="1" Margin="0,0,0,-179" Visibility="Hidden">
             <CheckBox x:Name="chkNamespacePurpose" Content="Purpose" HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top" Width="119"/>
             <CheckBox x:Name="chkNamespaceRH" Content="Revision History" HorizontalAlignment="Left" Margin="10,54,0,0" VerticalAlignment="Top" Width="119"/>
             <CheckBox x:Name="chkNamespaceCreated" Content="Username &amp; Date" HorizontalAlignment="Left" Margin="10,74,0,0" VerticalAlignment="Top" Width="119"/>
@@ -95,11 +95,11 @@
             <Label x:Name="lblConst" Content="Structure" HorizontalAlignment="Left" Margin="164,232,0,0" VerticalAlignment="Top" Width="106"/>
             <CheckBox x:Name="chkConstEvents" Content="Event Details" HorizontalAlignment="Left" Margin="164,319,0,0" VerticalAlignment="Top" Width="120"/>
             <CheckBox x:Name="chkConstExceptions" Content="Except Details" HorizontalAlignment="Left" Margin="164,340,0,0" VerticalAlignment="Top" Width="120"/>
-            <Button x:Name="btnSaveSectionToggle" Content="Save Toggle Sections" HorizontalAlignment="Left" Margin="10,393,0,0" VerticalAlignment="Top" Width="138" Click="btnSaveSectionToggle_Click"/>
+            <Button x:Name="btnSaveSectionToggle" Content="Save Template" HorizontalAlignment="Left" Margin="10,393,0,0" VerticalAlignment="Top" Width="138" Click="btnSaveSectionToggle_Click"/>
             <Button x:Name="btnCancelSectionToggle" Content="Cancel" HorizontalAlignment="Left" Margin="152,393,0,0" VerticalAlignment="Top" Width="138" Click="btnCancelSectionToggle_Click"/>
         </Grid>
-        <Grid x:Name="grdGeneralSettingsGrid" Grid.Row="1" Visibility="Hidden">
-            <Button x:Name="btnSaveSettings" Content="Save Settings" HorizontalAlignment="Left" Margin="10,144,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.379,-0.551" Height="39" Width="132" Click="btnSaveKeybinds_Click"/>
+        <Grid x:Name="grdGeneralSettingsGrid" Grid.Row="1" Visibility="Visible">
+            <Button x:Name="btnSaveSettings" Content="Save Colors" HorizontalAlignment="Left" Margin="10,144,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.379,-0.551" Height="39" Width="132" Click="btnSaveKeybinds_Click"/>
             <Button x:Name="btnCancelSettings" Content="Cancel" HorizontalAlignment="Left" Margin="158,144,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.379,-0.551" Height="39" Width="132" Click="btnCancelKeybinds_Click"/>
             <Label x:Name="lblOuterTagColor" Content="Tag Color:" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" FontSize="11" RenderTransformOrigin="0.495,-0.823"/>
             <syncfusion:ColorPicker x:Name="colorPickerOuter" Height="30" Width="50" Margin="69,64,171,330"/>

@@ -36,22 +36,70 @@ using COMET.Resources;
 using Newtonsoft.Json.Linq;
 using System.Reflection;
 
+/// <FLOWERBOX file="ToolWindow1Control.xaml.cs">
+/// <Created_By>
+/// COMET DEV TEAM
+/// </Created_By>
+/// <Purpose>
+/// Controls the backend logic of the GUI controls, and the comment generation logic.
+/// </Purpose>
+/// <Revise_History>
+/// 4/27/2025 - Initial release
+/// </Revise_History>
+/// </FLOWERBOX>
+
+/// <NAMESPACE name="COMET">
+/// <Purpose>
+/// Namespace of COMET
+/// </Purpose>
+/// </NAMESPACE>
 namespace COMET
 {
-    /// <summary>
-    /// Interaction logic for ToolWindow1Control.
-    /// </summary>
+
+      /// <CLASS name="ToolWindow1Control">
+   /// <Purpose>
+   ///  Class for the Tool Window
+   /// </Purpose>
+   /// </CLASS>
     public partial class ToolWindow1Control : UserControl
     {
         SettingsManager settings = new SettingsManager();
         XML_Tag_Names tagNames = new XML_Tag_Names();
 
+              /// <CLASS name="Parameter">
+       /// <Purpose>
+       ///  Parameter class
+       /// </Purpose>
+       /// </CLASS>
         public class Parameter {
+
+            /// <PROPERTY name="Name">
+            /// <Purpose>
+            ///  Name of Parameter
+            /// </Purpose>
+            /// </PROPERTY>
             public string Name { get; set; }
+
+            /// <PROPERTY name="Type">
+            /// <Purpose>
+            ///  Type of Parameter
+            /// </Purpose>
+            /// </PROPERTY>
             public string Type { get; set; }
+
+            /// <PROPERTY name="Description">
+            /// <Purpose>
+            ///  Description of Parameter
+            /// </Purpose>
+            /// </PROPERTY>
             public List<string> Description { get; set; } = new List<string>();
         }
 
+        /// <STRUCTURE name="XML_Tag_Names">
+        /// <Purpose>
+        ///  Options for XML Tag Names
+        /// </Purpose>
+        /// </STRUCTURE>
         struct XML_Tag_Names
         {
             public bool initalized;
@@ -64,6 +112,17 @@ namespace COMET
             public string tagExceptionThrown;
         }
 
+              /// <METHOD name="GetThemeColor">
+       /// <Purpose> 
+       ///  Pulls the theme that Visual Studio is using
+       /// </Purpose>
+       /// <Parameters> 
+       ///     colorIndex(__VSSYSCOLOREX):
+       /// </Parameters>
+       /// <Exception_Thrown> 
+       ///     InvalidOperationException:
+       /// </Exception_Thrown>
+       /// </METHOD>
         public static string GetThemeColor(__VSSYSCOLOREX colorIndex)
         {
             ThreadHelper.ThrowIfNotOnUIThread();
@@ -81,6 +140,14 @@ namespace COMET
             return finalColor;
         }
 
+              /// <METHOD name="setTextColor">
+       /// <Purpose> 
+       ///  Sets the text color of all labels in the GUI
+       /// </Purpose>
+       /// <Parameters> 
+       ///
+       /// </Parameters>
+       /// </METHOD>
         public void setTextColor()
         {
             string textColor = GetThemeColor(__VSSYSCOLOREX.VSCOLOR_COMMANDBAR_TEXT_ACTIVE);
@@ -140,9 +207,42 @@ namespace COMET
             lblOuterPropertyColor.Foreground = b;
         }
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ToolWindow1Control"/> class.
-        /// </summary>
+        /// <METHOD name="SetXMLColors">
+        /// <Purpose> 
+        ///  Sets the XML colors for the tags
+        /// </Purpose>
+        /// <Parameters> 
+        ///
+        /// </Parameters>
+        /// </METHOD>
+        public async void SetXMLColors()
+        {
+            var dte = getDTE();
+            await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
+            Properties fontsAndColorsProperties = dte.Properties["FontsAndColors", "TextEditor"];
+            FontsAndColorsItems fontsAndColorsItems = (FontsAndColorsItems)fontsAndColorsProperties.Item("FontsAndColorsItems").Object;
+            string xmlDocCommentName = "XML Doc Comment - Name";
+            string xmlDocCommentAttribute = "XML Doc Comment - Attribute Name";
+            string xmlDocCommentComment = "XML Doc Comment - Text";
+            var userColor = colorPickerOuter.Color;
+            var drawingColor = System.Drawing.Color.FromArgb(userColor.A, userColor.R, userColor.G, userColor.B);
+            fontsAndColorsItems.Item(xmlDocCommentName).Foreground = (uint)ColorTranslator.ToWin32(drawingColor);
+            userColor = colorPickerProperty.Color;
+            drawingColor = System.Drawing.Color.FromArgb(userColor.A, userColor.R, userColor.G, userColor.B);
+            fontsAndColorsItems.Item(xmlDocCommentAttribute).Foreground = (uint)ColorTranslator.ToWin32(drawingColor);
+            userColor = colorPickerInner.Color;
+            drawingColor = System.Drawing.Color.FromArgb(userColor.A, userColor.R, userColor.G, userColor.B);
+            fontsAndColorsItems.Item(xmlDocCommentComment).Foreground = (uint)ColorTranslator.ToWin32(drawingColor);
+        }
+
+        /// <METHOD name="ToolWindow1Control">
+        /// <Purpose> 
+        ///  Initializes the GUI
+        /// </Purpose>
+        /// <Parameters> 
+        ///
+        /// </Parameters>
+        /// </METHOD>
         public ToolWindow1Control()
         {
             this.InitializeComponent();
@@ -151,18 +251,14 @@ namespace COMET
             SetXMLColors();
         }
 
-        /// <summary>
-        /// Description:
-        /// Reads the Settings JSON file and loads the settings into the GUI
-        /// ==========================================
-        /// Called By: 
-        /// ToolWindow1Control
-        /// ==========================================
-        /// Revision History:
-        /// date        who     description
-        /// ================================
-        /// 2/9/2025   zs      inital creation
-        /// </summary>
+       /// <METHOD name="LoadSettings">
+       /// <Purpose> 
+       ///  Loads the settings from the AppData folder
+       /// </Purpose>
+       /// <Parameters> 
+       ///
+       /// </Parameters>
+       /// </METHOD>
         public void LoadSettings()
         {
             settings.LoadSettings();
@@ -212,22 +308,15 @@ namespace COMET
             SetXMLColors();
         }
 
-
-
-
-        /// <summary>
-        /// Description:
-        /// Used for the toggle checkboxes; references settings.toggle[] 
-        /// IF Y => the checkbox is checked
-        /// IF N => the checkbox is unchecked
-        /// ==========================================
-        /// Called By: 
-        /// ==========================================
-        /// Revision History:
-        /// date        who     description
-        /// ================================
-        /// 2/9/2025   zs      inital creation
-        /// </summary>
+        /// <METHOD name="ValidateToggleCheckboxes">
+        /// <Purpose> 
+        ///  Validates if the toggle checkbox is checked or not for the Toggle screen
+        /// </Purpose>
+        /// <Parameters> 
+        ///     toggle(CheckBox):
+        ///     enable(bool):
+        /// </Parameters>
+        /// </METHOD>
         public void ValidateToggleCheckboxes(CheckBox toggle, bool enable)
         {
             if (enable)
@@ -241,19 +330,15 @@ namespace COMET
             }
         }
 
-        /// <summary>
-        /// Description:
-        /// Event invoked when btnHomeScreen is clicked
-        /// ==========================================
-        /// Called By: N/A
-        /// ==========================================
-        /// Revision History:
-        /// date        who     description
-        /// ================================
-        /// 1/25/2025   zs      inital creation
-        /// </summary>
-        /// <param name="sender">btnHomeScreen</param>
-        /// <param name="e">Click</param>
+       /// <METHOD name="btnHomeScreen_Click">
+       /// <Purpose> 
+       ///  Generation horizontal menu button is clicked
+       /// </Purpose>
+       /// <Parameters> 
+       ///     sender(object):
+       ///     e(RoutedEventArgs):
+       /// </Parameters>
+       /// </METHOD>
         private void btnHomeScreen_Click(object sender, RoutedEventArgs e)
         {
             ChangeHomeGridVisibility(true);
@@ -261,19 +346,15 @@ namespace COMET
 
         }
 
-        /// <summary>
-        /// Description:
-        /// Event invoked when btnSettingsScreen is clicked
-        /// ==========================================
-        /// Called By: N/A
-        /// ==========================================
-        /// Revision History:
-        /// date        who     description
-        /// ================================
-        /// 1/25/2025   zs      inital creation
-        /// </summary>
-        /// <param name="sender">btnSettingsScreen</param>
-        /// <param name="e">Click</param>
+        /// <METHOD name="btnSettingsScreen_Click">
+        /// <Purpose> 
+        ///  Settings horizontal menu button is clicked
+        /// </Purpose>
+        /// <Parameters> 
+        ///     sender(object):
+        ///     e(RoutedEventArgs):
+        /// </Parameters>
+        /// </METHOD>
         private void btnSettingsScreen_Click(object sender, RoutedEventArgs e)
         {
             ChangeSettingsGridVisibility(true);
@@ -281,19 +362,99 @@ namespace COMET
             LoadSettings();
         }
 
-        /// <summary>
-        /// Description:
-        /// Event invoked when btnUpdateAll is clicked
-        /// ==========================================
-        /// Called By: N/A
-        /// ==========================================
-        /// Revision History:
-        /// date        who     description
-        /// ================================
-        /// 2/9/2025   zs      inital creation
-        /// </summary>
-        /// <param name="sender">btnUpdateAll</param>
-        /// <param name="e">Click</param>
+        /// <METHOD name="InitialGridVisibility">
+        /// <Purpose> 
+        ///  Sets the initial visibility of the GUI (Generation Screen)
+        /// </Purpose>
+        /// <Parameters> 
+        ///
+        /// </Parameters>
+        /// </METHOD>
+        /// 
+
+        /// <METHOD name="ChangeSettingsGridVisibility">
+        /// <Purpose> 
+        ///  Changes the visibility and enable status of the Settings screen
+        /// </Purpose>
+        /// <Parameters> 
+        ///     visibility(bool):
+        /// </Parameters>
+        /// </METHOD>
+        public void ChangeSettingsGridVisibility(bool visibility)
+        {
+            if (visibility)
+            {
+                grdSettingsGrid.Visibility = Visibility.Visible;
+                grdSettingsGrid.IsEnabled = true;
+            }
+            else if (!visibility)
+            {
+                grdSettingsGrid.Visibility = Visibility.Hidden;
+                grdSettingsGrid.IsEnabled = false;
+            }
+        }
+
+        public void InitialGridVisibility()
+        {
+            ChangeHomeGridVisibility(true);
+            ChangeSettingsGridVisibility(false);
+            ChangeUpdateSelectedGridVisibility(false);
+            ChangeSectionNameGridVisibility(false);
+            ChangeSectionToggleGridVisibility(false);
+            ChangeKeybindGridVisibility(false);
+        }
+
+        /// <METHOD name="ChangeOptionsStackEnable">
+        /// <Purpose> 
+        ///  Changes the enable status of the horizontal menu
+        /// </Purpose>
+        /// <Parameters> 
+        ///     enable(bool):
+        /// </Parameters>
+        /// </METHOD>
+        public void ChangeOptionsStackEnable(bool enable)
+        {
+            if (enable)
+            {
+                stkScreenOptions.IsEnabled = true;
+            }
+            else if (!enable)
+            {
+                stkScreenOptions.IsEnabled = false;
+            }
+        }
+
+        /// <METHOD name="ChangeHomeGridVisibility">
+        /// <Purpose> 
+        ///  Changes the visibility and enable status of the Home Grid
+        /// </Purpose>
+        /// <Parameters> 
+        ///     visibility(bool):
+        /// </Parameters>
+        /// </METHOD>
+        public void ChangeHomeGridVisibility(bool visibility)
+        {
+            if (visibility)
+            {
+                grdHomeGrid.Visibility = Visibility.Visible;
+                grdHomeGrid.IsEnabled = true;
+            }
+            else if (!visibility)
+            {
+                grdHomeGrid.Visibility = Visibility.Hidden;
+                grdHomeGrid.IsEnabled = false;
+            }
+        }
+
+        /// <METHOD name="btnUpdateAll_Click">
+        /// <Purpose> 
+        ///  Full Template button is pressed on Generation screen
+        /// </Purpose>
+        /// <Parameters> 
+        ///     sender(object):
+        ///     e(RoutedEventArgs):
+        /// </Parameters>
+        /// </METHOD>
         private void btnUpdateAll_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Comment Template Generated!");
@@ -302,19 +463,15 @@ namespace COMET
             ChangeOptionsStackEnable(true);
         }
 
-        /// <summary>
-        /// Description:
-        /// Event invoked when btnUpdateSelected is clicked
-        /// ==========================================
-        /// Called By: N/A
-        /// ==========================================
-        /// Revision History:
-        /// date        who     description
-        /// ================================
-        /// 2/9/2025   zs      inital creation
-        /// </summary>
-        /// <param name="sender">btnUpdateSelected</param>
-        /// <param name="e">Click</param>
+        /// <METHOD name="btnUpdateSelected_Click">
+        /// <Purpose> 
+        ///  Partial Template button is pressed on Generation screen
+        /// </Purpose>
+        /// <Parameters> 
+        ///     sender(object):
+        ///     e(RoutedEventArgs):
+        /// </Parameters>
+        /// </METHOD>
         private void btnUpdateSelected_Click(object sender, RoutedEventArgs e)
         {
             ChangeUpdateSelectedGridVisibility(true);
@@ -323,19 +480,37 @@ namespace COMET
             LoadSettings();
         }
 
-        /// <summary>
-        /// Description:
-        /// Event invoked when btnRunUpdateSelected is clicked
-        /// ==========================================
-        /// Called By: N/A
-        /// ==========================================
-        /// Revision History:
-        /// date        who     description
-        /// ================================
-        /// 2/9/2025   zs      inital creation
-        /// </summary>
-        /// <param name="sender">btnRunUpdateSelected</param>
-        /// <param name="e">Click</param>
+        /// <METHOD name="ChangeUpdateSelectedGridVisibility">
+        /// <Purpose> 
+        ///  Changes the visibility and enable status of the Partial Template screen
+        /// </Purpose>
+        /// <Parameters> 
+        ///     visibility(bool):
+        /// </Parameters>
+        /// </METHOD>
+        public void ChangeUpdateSelectedGridVisibility(bool visibility)
+        {
+            if (visibility)
+            {
+                grdUpdateSelectedGrid.Visibility = Visibility.Visible;
+                grdUpdateSelectedGrid.IsEnabled = true;
+            }
+            else if (!visibility)
+            {
+                grdUpdateSelectedGrid.Visibility = Visibility.Hidden;
+                grdUpdateSelectedGrid.IsEnabled = false;
+            }
+        }
+
+        /// <METHOD name="btnRunUpdateSelected_Click">
+        /// <Purpose> 
+        ///  Run button is pressed on Partial Template screen
+        /// </Purpose>
+        /// <Parameters> 
+        ///     sender(object):
+        ///     e(RoutedEventArgs):
+        /// </Parameters>
+        /// </METHOD>
         private async void btnRunUpdateSelected_Click(object sender, RoutedEventArgs e)
         {
             await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
@@ -392,28 +567,22 @@ namespace COMET
             {
                 await InsertFlowerbox();
             }
-
-
-
             selection.MoveToLineAndOffset(originalLine, originalColumn);
             MessageBox.Show("Selected Template Sections Generated!");
             ChangeHomeGridVisibility(true);
             ChangeUpdateSelectedGridVisibility(false);
             ChangeOptionsStackEnable(true);
         }
-        /// <summary>
-        /// Description:
-        /// Event invoked when btnCancelUpdateSelected is clicked
-        /// ==========================================
-        /// Called By: N/A
-        /// ==========================================
-        /// Revision History:
-        /// date        who     description
-        /// ================================
-        /// 2/9/2025   zs      inital creation
-        /// </summary>
-        /// <param name="sender">btnCancelUpdateSelected</param>
-        /// <param name="e">Click</param>
+
+        /// <METHOD name="btnCancelUpdateSelected_Click">
+        /// <Purpose> 
+        ///  Cancel button is pressed on Partial Template screen
+        /// </Purpose>
+        /// <Parameters> 
+        ///     sender(object):
+        ///     e(RoutedEventArgs):
+        /// </Parameters>
+        /// </METHOD>
         private void btnCancelUpdateSelected_Click(object sender, RoutedEventArgs e)
         {
             ChangeHomeGridVisibility(true);
@@ -421,20 +590,15 @@ namespace COMET
             ChangeOptionsStackEnable(true);
         }
 
-        /// <summary>
-        /// Description:
-        /// Event invoked when btnEditSectionNames is clicked
-        /// This will disable stkScreenOptions (Home/Settings).
-        /// ==========================================
-        /// Called By: N/A
-        /// ==========================================
-        /// Revision History:
-        /// date        who     description
-        /// ================================
-        /// 1/25/2025   zs      inital creation
-        /// </summary>
-        /// <param name="sender">btnEditSectionNames</param>
-        /// <param name="e">Click</param>
+        /// <METHOD name="btnEditSectionNames_Click">
+        /// <Purpose> 
+        ///  Edit Section Names button is pressed on Settings screen
+        /// </Purpose>
+        /// <Parameters> 
+        ///     sender(object):
+        ///     e(RoutedEventArgs):
+        /// </Parameters>
+        /// </METHOD>
         private void btnEditSectionNames_Click(object sender, RoutedEventArgs e)
         {
             if (tagNames.initalized == false)
@@ -457,27 +621,39 @@ namespace COMET
             LoadSettings();
         }
 
+        /// <METHOD name="ChangeSectionNameGridVisibility">
+        /// <Purpose> 
+        ///  Changes the visibility and enable status of the Edit Section Names screen
+        /// </Purpose>
+        /// <Parameters> 
+        ///     visibility(bool):
+        /// </Parameters>
+        /// </METHOD>
+        public void ChangeSectionNameGridVisibility(bool visibility)
+        {
+            if (visibility)
+            {
+                grdSectionNameGrid.Visibility = Visibility.Visible;
+                grdSectionNameGrid.IsEnabled = true;
+            }
+            else if (!visibility)
+            {
+                grdSectionNameGrid.Visibility = Visibility.Hidden;
+                grdSectionNameGrid.IsEnabled = false;
+            }
+        }
 
-
-
-        /// <summary>
-        /// Description:
-        /// Event invoked when btnSaveSectionName is clicked.
-        /// This will enable stkScreenOptions (Home/Settings).
-        /// ==========================================
-        /// Called By: N/A
-        /// ==========================================
-        /// Revision History:
-        /// date        who     description
-        /// ================================
-        /// 1/25/2025   zs      inital creation
-        /// </summary>
-        /// <param name="sender">btnSaveSectionName</param>
-        /// <param name="e">Click</param>
+        /// <METHOD name="btnSaveSectionName_Click">
+        /// <Purpose> 
+        ///  Save Section Names button is pressed on the Edit Section Names screen
+        /// </Purpose>
+        /// <Parameters> 
+        ///     sender(object):
+        ///     e(RoutedEventArgs):
+        /// </Parameters>
+        /// </METHOD>
         private void btnSaveSectionName_Click(object sender, RoutedEventArgs e)
         {
-
-
             ChangeSettingsGridVisibility(true);
             ChangeSectionNameGridVisibility(false);
             ChangeOptionsStackEnable(true);
@@ -493,19 +669,15 @@ namespace COMET
             btnUpdateAllTags_Click(btnUpdateAllTags, new RoutedEventArgs());
         }
 
-        /// <summary>
-        /// Description:
-        /// Event invoked when btnCancelSectionName is clicked.
-        /// ==========================================
-        /// Called By: N/A
-        /// ==========================================
-        /// Revision History:
-        /// date        who     description
-        /// ================================
-        /// 2/9/2025   zs      inital creation
-        /// </summary>
-        /// <param name="sender">btnCancelSectionName</param>
-        /// <param name="e">Click</param>
+        /// <METHOD name="btnCancelSectionName_Click">
+        /// <Purpose> 
+        ///  Cancel button is pressed on the Edit Section Names screen
+        /// </Purpose>
+        /// <Parameters> 
+        ///     sender(object):
+        ///     e(RoutedEventArgs):
+        /// </Parameters>
+        /// </METHOD>
         private void btnCancelSectionName_Click(object sender, RoutedEventArgs e)
         {
             ChangeSettingsGridVisibility(true);
@@ -513,19 +685,15 @@ namespace COMET
             ChangeOptionsStackEnable(true);
         }
 
-        /// <summary>
-        /// Description:
-        /// Event invoked when btnToggleSections is clicked.
-        /// ==========================================
-        /// Called By: N/A
-        /// ==========================================
-        /// Revision History:
-        /// date        who     description
-        /// ================================
-        /// 2/9/2025   zs      inital creation
-        /// </summary>
-        /// <param name="sender">btnToggleSections</param>
-        /// <param name="e">Click</param>
+       /// <METHOD name="btnToggleSections_Click">
+       /// <Purpose> 
+       ///  Customize Template button is pressed on the Settings Screen
+       /// </Purpose>
+       /// <Parameters> 
+       ///     sender(object):
+       ///     e(RoutedEventArgs):
+       /// </Parameters>
+       /// </METHOD>
         private void btnToggleSections_Click(object sender, RoutedEventArgs e)
         {
             ChangeSectionToggleGridVisibility(true);
@@ -534,19 +702,37 @@ namespace COMET
             LoadSettings();
         }
 
-        /// <summary>
-        /// Description:
-        /// Event invoked when btnSaveSectionToggle is clicked.
-        /// ==========================================
-        /// Called By: N/A
-        /// ==========================================
-        /// Revision History:
-        /// date        who     description
-        /// ================================
-        /// 2/9/2025   zs      inital creation
-        /// </summary>
-        /// <param name="sender">btnSaveSectionToggle</param>
-        /// <param name="e">Click</param>
+        /// <METHOD name="ChangeSectionToggleGridVisibility">
+        /// <Purpose> 
+        ///  Changes the visibility and enable status of the Customize Template screen
+        /// </Purpose>
+        /// <Parameters> 
+        ///     visibility(bool):
+        /// </Parameters>
+        /// </METHOD>
+        public void ChangeSectionToggleGridVisibility(bool visibility)
+        {
+            if (visibility)
+            {
+                grdSectionToggleGrid.Visibility = Visibility.Visible;
+                grdSectionToggleGrid.IsEnabled = true;
+            }
+            else if (!visibility)
+            {
+                grdSectionToggleGrid.Visibility = Visibility.Hidden;
+                grdSectionToggleGrid.IsEnabled = false;
+            }
+        }
+
+        /// <METHOD name="btnSaveSectionToggle_Click">
+        /// <Purpose> 
+        ///  Save Template button is pressed on the Customize Template screen
+        /// </Purpose>
+        /// <Parameters> 
+        ///     sender(object):
+        ///     e(RoutedEventArgs):
+        /// </Parameters>
+        /// </METHOD>
         private void btnSaveSectionToggle_Click(object sender, RoutedEventArgs e)
         {
             ChangeSettingsGridVisibility(true);
@@ -580,19 +766,15 @@ namespace COMET
             settings.SaveSettings();
         }
 
-        /// <summary>
-        /// Description:
-        /// Event invoked when btnCancelSectionToggle is clicked.
-        /// ==========================================
-        /// Called By: N/A
-        /// ==========================================
-        /// Revision History:
-        /// date        who     description
-        /// ================================
-        /// 2/9/2025   zs      inital creation
-        /// </summary>
-        /// <param name="sender">btnCancelSectionToggle</param>
-        /// <param name="e">Click</param>
+       /// <METHOD name="btnCancelSectionToggle_Click">
+       /// <Purpose> 
+       ///  Cancel button is pressed on the Customize Template Screen
+       /// </Purpose>
+       /// <Parameters> 
+       ///     sender(object):
+       ///     e(RoutedEventArgs):
+       /// </Parameters>
+       /// </METHOD>
         private void btnCancelSectionToggle_Click(object sender, RoutedEventArgs e)
         {
             ChangeSettingsGridVisibility(true);
@@ -600,6 +782,15 @@ namespace COMET
             ChangeOptionsStackEnable(true);
         }
 
+        /// <METHOD name="btnDefaultSettings_Click">
+        /// <Purpose> 
+        ///  Reset to Default Settings is pressed on the Settings screen
+        /// </Purpose>
+        /// <Parameters> 
+        ///     sender(object):
+        ///     e(RoutedEventArgs):
+        /// </Parameters>
+        /// </METHOD>
         private void btnDefaultSettings_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("You are about to reset all settings to default.\nAre you sure you want to continue?", "Reset Settings", MessageBoxButton.YesNo);
@@ -607,24 +798,21 @@ namespace COMET
             {
                 settings.DefaultSettings();
                 SetXMLColors();
+                btnUpdateAllTags_Click(btnUpdateAllTags, new RoutedEventArgs());
             }
 
 
         }
 
-        /// <summary>
-        /// Description:
-        /// Event invoked when btnEditKeyBind is clicked.
-        /// ==========================================
-        /// Called By: N/A
-        /// ==========================================
-        /// Revision History:
-        /// date        who     description
-        /// ================================
-        /// 2/9/2025   zs      inital creation
-        /// </summary>
-        /// <param name="sender">btnEditKeyBind</param>
-        /// <param name="e">Click</param>
+        /// <METHOD name="btnEditKeyBind_Click">
+        /// <Purpose> 
+        ///  Edit Color Settings is pressed on the Settings screen
+        /// </Purpose>
+        /// <Parameters> 
+        ///     sender(object):
+        ///     e(RoutedEventArgs):
+        /// </Parameters>
+        /// </METHOD>
         private void btnEditKeyBind_Click(object sender, RoutedEventArgs e)
         {
             ChangeKeybindGridVisibility(true);
@@ -633,259 +821,14 @@ namespace COMET
             LoadSettings();
         }
 
-        /// <summary>
-        /// Description:
-        /// Event invoked when btnSaveKeybinds is clicked.
-        /// ==========================================
-        /// Called By: N/A
-        /// ==========================================
-        /// Revision History:
-        /// date        who     description
-        /// ================================
-        /// 2/9/2025   zs      inital creation
-        /// </summary>
-        /// <param name="sender">btnSaveKeybinds</param>
-        /// <param name="e">Click</param>
-        private async void btnSaveKeybinds_Click(object sender, RoutedEventArgs e)
-        {
-            ChangeSettingsGridVisibility(true);
-            ChangeKeybindGridVisibility(false);
-            ChangeOptionsStackEnable(true);
-            settings.setColor("OuterProperty", colorPickerProperty.Color.ToString());
-            settings.setColor("InnerTag", colorPickerInner.Color.ToString());
-            settings.setColor("OuterTag", colorPickerOuter.Color.ToString());
-            settings.setInitials(txtInitials.Text);
-            SetXMLColors();
-            settings.SaveSettings();
-            
-        }
-
-        public async void SetXMLColors()
-        {
-            var dte = getDTE();
-            await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
-            Properties fontsAndColorsProperties = dte.Properties["FontsAndColors", "TextEditor"];
-            FontsAndColorsItems fontsAndColorsItems = (FontsAndColorsItems)fontsAndColorsProperties.Item("FontsAndColorsItems").Object;
-            string xmlDocCommentName = "XML Doc Comment - Name";
-            string xmlDocCommentAttribute = "XML Doc Comment - Attribute Name";
-            string xmlDocCommentComment = "XML Doc Comment - Text";
-            var userColor = colorPickerOuter.Color;
-            var drawingColor = System.Drawing.Color.FromArgb(userColor.A, userColor.R, userColor.G, userColor.B);
-            fontsAndColorsItems.Item(xmlDocCommentName).Foreground = (uint)ColorTranslator.ToWin32(drawingColor);
-            userColor = colorPickerProperty.Color;
-            drawingColor = System.Drawing.Color.FromArgb(userColor.A, userColor.R, userColor.G, userColor.B);
-            fontsAndColorsItems.Item(xmlDocCommentAttribute).Foreground = (uint)ColorTranslator.ToWin32(drawingColor);
-            userColor = colorPickerInner.Color;
-            drawingColor = System.Drawing.Color.FromArgb(userColor.A, userColor.R, userColor.G, userColor.B);
-            fontsAndColorsItems.Item(xmlDocCommentComment).Foreground = (uint)ColorTranslator.ToWin32(drawingColor);
-        }
-
-        /// <summary>
-        /// Description:
-        /// Event invoked when btnCancelKeybinds is clicked.
-        /// ==========================================
-        /// Called By: N/A
-        /// ==========================================
-        /// Revision History:
-        /// date        who     description
-        /// ================================
-        /// 2/9/2025   zs      inital creation
-        /// </summary>
-        /// <param name="sender">btnCancelKeybinds</param>
-        /// <param name="e">Click</param>
-        private void btnCancelKeybinds_Click(object sender, RoutedEventArgs e)
-        {
-            ChangeSettingsGridVisibility(true);
-            ChangeKeybindGridVisibility(false);
-            ChangeOptionsStackEnable(true);
-        }
-
-        /// <summary>
-        /// Description:
-        /// Sets the inital visbility/enable on all Grids on startup
-        /// ==========================================
-        /// Called By:
-        ///     ToolWindow1Control
-        /// ==========================================
-        /// Revision History:
-        /// date        who     description
-        /// ================================
-        /// 1/25/2025   zs      inital creation
-        /// </summary>
-        public void InitialGridVisibility()
-        {
-            ChangeHomeGridVisibility(true);
-            ChangeSettingsGridVisibility(false);
-            ChangeUpdateSelectedGridVisibility(false);
-            ChangeSectionNameGridVisibility(false);
-            ChangeSectionToggleGridVisibility(false);
-            ChangeKeybindGridVisibility(false);
-        }
-
-        /// <summary>
-        /// Description:
-        /// Changes the enable status of stkScreenOptions based on the param enable
-        /// IF Y => stkScreenOptions is Enabled
-        /// IF N => stkScreenOptions is Disabled
-        /// ==========================================
-        /// Called By:
-        /// 
-        /// ==========================================
-        /// Revision History:
-        /// date        who     description
-        /// ================================
-        /// 1/25/2025   zs      inital creation
-        /// </summary>
-        /// <param name="enable">bool which determines if stkScreenOptions can be enabled</param>
-        public void ChangeOptionsStackEnable(bool enable)
-        {
-            if (enable)
-            {
-                stkScreenOptions.IsEnabled = true;
-            }
-            else if (!enable)
-            {
-                stkScreenOptions.IsEnabled = false;
-            }
-        }
-
-        /// <summary>
-        /// Description:
-        /// Changes the visibility of grdHomeGrid based on the param visibility
-        /// IF Y => grdHomeGrid is Visible and Enabled
-        /// IF N => grdHomeGrid is Hidden and Disabled
-        /// ==========================================
-        /// Called By:
-        ///     btnHomeScreen_Click
-        ///     btnSettingsScreen_Click
-        /// ==========================================
-        /// Revision History:
-        /// date        who     description
-        /// ================================
-        /// 1/25/2025   zs      inital creation
-        /// </summary>
-        /// <param name="visibility">bool which determines if grdHomeGrid can be seen</param>
-        public void ChangeHomeGridVisibility(bool visibility)
-        {
-            if (visibility)
-            {
-                grdHomeGrid.Visibility = Visibility.Visible;
-                grdHomeGrid.IsEnabled = true;
-            }
-            else if (!visibility)
-            {
-                grdHomeGrid.Visibility = Visibility.Hidden;
-                grdHomeGrid.IsEnabled = false;
-            }
-        }
-
-        /// <summary>
-        /// Description:
-        /// Changes the visibility of grdSettingsGrid based on the param visibility
-        /// IF Y => grdSettingsGrid is Visible and Enabled
-        /// IF N => grdSettingsGrid is Hidden and Disabled
-        /// ==========================================
-        /// Called By:
-        ///     btnHomeScreen_Click
-        ///     btnSettingsScreen_Click
-        ///     btnEditSectionNames_Click
-        ///     btnSaveSectionName_Click
-        /// ==========================================
-        /// Revision History:
-        /// date        who     description
-        /// ================================
-        /// 1/25/2025   zs      inital creation
-        /// </summary>
-        /// <param name="visibility">bool which determines if grdSettingsGrid can be seen</param>
-        public void ChangeSettingsGridVisibility(bool visibility)
-        {
-            if (visibility)
-            {
-                grdSettingsGrid.Visibility = Visibility.Visible;
-                grdSettingsGrid.IsEnabled = true;
-            }
-            else if (!visibility)
-            {
-                grdSettingsGrid.Visibility = Visibility.Hidden;
-                grdSettingsGrid.IsEnabled = false;
-            }
-        }
-
-        /// <summary>
-        /// Description:
-        /// Changes the visibility of grdSectionNameGrid based on the param visibility
-        /// IF Y => grdSectionNameGrid is Visible and Enabled
-        /// IF N => grdSectionNameGrid is Hidden and Disabled
-        /// ==========================================
-        /// Called By:
-        ///     btnEditSectionNames_Click
-        ///     btnSaveSectionName_Click
-        /// ==========================================
-        /// Revision History:
-        /// date        who     description
-        /// ================================
-        /// 1/25/2025   zs      inital creation
-        /// </summary>
-        /// <param name="visibility">bool which determines if grdSectionNameGrid can be seen</param>
-        public void ChangeSectionNameGridVisibility(bool visibility)
-        {
-            if (visibility)
-            {
-                grdSectionNameGrid.Visibility = Visibility.Visible;
-                grdSectionNameGrid.IsEnabled = true;
-            }
-            else if (!visibility)
-            {
-                grdSectionNameGrid.Visibility = Visibility.Hidden;
-                grdSectionNameGrid.IsEnabled = false;
-            }
-        }
-
-        /// <summary>
-        /// Description:
-        /// Changes the visibility of grdSectionToggleGrid based on the param visibility
-        /// IF Y => grdSectionToggleGrid is Visible and Enabled
-        /// IF N => grdSectionToggleGrid is Hidden and Disabled
-        /// 
-        /// Called By:
-        /// 
-        /// ==========================================
-        /// Revision History:
-        /// date        who     description
-        /// ================================
-        /// 1/25/2025   zs      inital creation
-        /// </summary>
-        /// <param name="visibility">bool which determines if grdSectionToggleGrid can be seen</param>
-        public void ChangeSectionToggleGridVisibility(bool visibility)
-        {
-            if (visibility)
-            {
-                grdSectionToggleGrid.Visibility = Visibility.Visible;
-                grdSectionToggleGrid.IsEnabled = true;
-            }
-            else if (!visibility)
-            {
-                grdSectionToggleGrid.Visibility = Visibility.Hidden;
-                grdSectionToggleGrid.IsEnabled = false;
-            }
-        }
-
-        /// <summary>
-        /// Description:
-        /// Changes the visibility of grdGeneralSettingsGrid based on the param visibility
-        /// IF Y => grdGeneralSettingsGrid is Visible and Enabled
-        /// IF N => grdGeneralSettingsGrid is Hidden and Disabled
-        /// ==========================================
-        /// Called By:
-        ///     btnHomeScreen_Click
-        ///     btnSettingsScreen_Click
-        /// ==========================================
-        /// Revision History:
-        /// date        who     description
-        /// ================================
-        /// 1/25/2025   zs      inital creation
-        /// </summary>
-        /// <param name="visibility">bool which determines if grdGeneralSettingsGrid can be seen</param>
+        /// <METHOD name="ChangeKeybindGridVisibility">
+        /// <Purpose> 
+        ///  Changes the visibility and enable status of the Edit Color Settings screen
+        /// </Purpose>
+        /// <Parameters> 
+        ///     visibility(bool):
+        /// </Parameters>
+        /// </METHOD>
         public void ChangeKeybindGridVisibility(bool visibility)
         {
             if (visibility)
@@ -900,46 +843,82 @@ namespace COMET
             }
         }
 
-        /// <summary>
-        /// Description:
-        /// Changes the visibility of grdUpdateSelectedGrid based on the param visibility
-        /// IF Y => grdUpdateSelectedGrid is Visible and Enabled
-        /// IF N => grdUpdateSelectedGrid is Hidden and Disabled
-        /// ==========================================
-        /// Called By:
-        /// 
-        /// ==========================================
-        /// Revision History:
-        /// date        who     description
-        /// ================================
-        /// 2/8/2025   zs      inital creation
-        /// </summary>
-        /// <param name="visibility">bool which determines if grdUpdateSelectedGrid can be seen</param>
-        public void ChangeUpdateSelectedGridVisibility(bool visibility)
+        /// <METHOD name="btnSaveKeybinds_Click">
+        /// <Purpose> 
+        ///  Save Colors button is pressed on the Edit Color Settings screen
+        /// </Purpose>
+        /// <Parameters> 
+        ///     sender(object):
+        ///     e(RoutedEventArgs):
+        /// </Parameters>
+        /// </METHOD>
+        private async void btnSaveKeybinds_Click(object sender, RoutedEventArgs e)
         {
-            if (visibility)
-            {
-                grdUpdateSelectedGrid.Visibility = Visibility.Visible;
-                grdUpdateSelectedGrid.IsEnabled = true;
-            }
-            else if (!visibility)
-            {
-                grdUpdateSelectedGrid.Visibility = Visibility.Hidden;
-                grdUpdateSelectedGrid.IsEnabled = false;
-            }
+            ChangeSettingsGridVisibility(true);
+            ChangeKeybindGridVisibility(false);
+            ChangeOptionsStackEnable(true);
+            settings.setColor("OuterProperty", colorPickerProperty.Color.ToString());
+            settings.setColor("InnerTag", colorPickerInner.Color.ToString());
+            settings.setColor("OuterTag", colorPickerOuter.Color.ToString());
+            settings.setInitials(txtInitials.Text);
+            SetXMLColors();
+            settings.SaveSettings();
+            
         }
 
+        /// <METHOD name="btnCancelKeybinds_Click">
+        /// <Purpose> 
+        ///  Cancel button is pressed on the Edit Color Settings screen
+        /// </Purpose>
+        /// <Parameters> 
+        ///     sender(object):
+        ///     e(RoutedEventArgs):
+        /// </Parameters>
+        /// </METHOD>
+        private void btnCancelKeybinds_Click(object sender, RoutedEventArgs e)
+        {
+            ChangeSettingsGridVisibility(true);
+            ChangeKeybindGridVisibility(false);
+            ChangeOptionsStackEnable(true);
+        }
+
+        /// <METHOD name="getDTE">
+        /// <Purpose> 
+        ///  Returns the DTE instance
+        /// </Purpose>
+        /// <Parameters> 
+        ///
+        /// </Parameters>
+        /// </METHOD>
         public DTE2 getDTE()
         {
 
             return COMETPackage.DTEInstance;
 
         }
+
+        /// <METHOD name="getFontAndColorStorage">
+        /// <Purpose> 
+        ///  Returns the Font and Color Storage instance
+        /// </Purpose>
+        /// <Parameters> 
+        ///
+        /// </Parameters>
+        /// </METHOD>
         public IVsFontAndColorStorage getFontAndColorStorage()
         {
             return COMETPackage.FontAndColorStorage;
         }
 
+              /// <METHOD name="allComments">
+       /// <Purpose> 
+       ///  Generate comments for the Full Template
+       /// </Purpose>
+       /// <Parameters> 
+       ///     sender(object):
+       ///     e(RoutedEventArgs):
+       /// </Parameters>
+       /// </METHOD>
         private async void allComments(object sender, RoutedEventArgs e)
         {
             await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
@@ -988,6 +967,14 @@ namespace COMET
             selection.MoveToLineAndOffset(originalLine, originalColumn);
         }
 
+        /// <METHOD name="refreshTextDoc">
+        /// <Purpose> 
+        ///  Refreshes the TextDocument object
+        /// </Purpose>
+        /// <Parameters> 
+        ///     dte(DTE2):
+        /// </Parameters>
+        /// </METHOD>
         private TextDocument refreshTextDoc(DTE2 dte)
         {
             ThreadHelper.ThrowIfNotOnUIThread();
@@ -995,6 +982,15 @@ namespace COMET
             TextDocument textDoc = (TextDocument)actDocument.Object("TextDocument");
             return textDoc;
         }
+
+        /// <METHOD name="refreshTree">
+        /// <Purpose> 
+        ///  Refreshes the tree object
+        /// </Purpose>
+        /// <Parameters> 
+        ///     activeDoc(Document):
+        /// </Parameters>
+        /// </METHOD>
         private SyntaxTree refreshTree(Document activeDoc)
         {
             ThreadHelper.ThrowIfNotOnUIThread();
@@ -1007,6 +1003,16 @@ namespace COMET
             return syntaxTree;
         }
 
+        /// <METHOD name="allMethods">
+        /// <Purpose> 
+        ///  Locates all Methods and Constructors in the document and generates comments for them
+        /// </Purpose>
+        /// <Parameters> 
+        ///     dte(DTE2):
+        ///     tree(SyntaxTree):
+        ///     textDoc(TextDocument):
+        /// </Parameters>
+        /// </METHOD>
         private async void allMethods(DTE2 dte, SyntaxTree tree, TextDocument textDoc)
         {
             SettingsManager sm = new SettingsManager();
@@ -1043,7 +1049,14 @@ namespace COMET
             dte.Documents.SaveAll();
         }
 
-
+        /// <METHOD name="InsertConstructorComment">
+        /// <Purpose> 
+        ///  Inserts a comment for the constructor
+        /// </Purpose>
+        /// <Parameters> 
+        ///     ctor(ConstructorDeclarationSyntax):
+        /// </Parameters>
+        /// </METHOD>
         public async void InsertConstructorComment(ConstructorDeclarationSyntax ctor)
         {
             SettingsManager sm = new SettingsManager();
@@ -1169,27 +1182,20 @@ namespace COMET
             }
         }
 
-        private string BuildConstructorCommentText(SettingsManager sm, string ctorName, string indent, string paramStr, string typeStr)
-        {
-            string comment = $@"/// <METHOD name=""{ctorName}"">" + "\n";
-
-            if (sm.getToggle("toggleMethodCB"))
-                comment += indent + $@"/// <{settings.getName("Created By")} name=""{settings.getInitials()}"" date=""{DateTime.Now:MM/dd/yyyy}""> </{settings.getName("Created By")}>" + "\n";
-            if (sm.getToggle("toggleMethodPurpose"))
-                comment += indent + $"/// <{settings.getName("Purpose")}> </{settings.getName("Purpose")}>\n";
-            if (!string.IsNullOrEmpty(paramStr))
-                paramStr = attachTypesToParams(paramStr, typeStr, indent);
-            comment += indent + $"/// <Parameters> {paramStr} </Parameters>\n"; ;
-            if (sm.getToggle("toggleMethodRH"))
-                comment += indent + $"/// <{settings.getName("Revise History")}> </{settings.getName("Revise History")}>\n";
-
-            comment += indent + "/// </METHOD>\n" + indent;
-
-            return comment;
-        }
-
-
-
+              /// <METHOD name="TryMoveToLineAndOffset">
+       /// <Purpose> 
+       ///  Sets the offset of the comment on the line
+       /// </Purpose>
+       /// <Parameters> 
+       ///     textDoc(TextDocument):
+       ///     editPoint(EditPoint):
+       ///     row(int):
+       ///     offset(int):
+       /// </Parameters>
+       /// <Exception_Caught> 
+       ///     Exception:
+       /// </Exception_Caught>
+       /// </METHOD>
         private bool TryMoveToLineAndOffset(TextDocument textDoc, EditPoint editPoint, int row, int offset)
         {
             try
@@ -1213,7 +1219,16 @@ namespace COMET
             }
         }
 
-
+        /// <METHOD name="allClasses">
+        /// <Purpose> 
+        ///  Locates all Classes in the document and generates comments for them
+        /// </Purpose>
+        /// <Parameters> 
+        ///     dte(DTE2):
+        ///     tree(SyntaxTree):
+        ///     textDoc(TextDocument):
+        /// </Parameters>
+        /// </METHOD>
         private async void allClasses(DTE2 dte, SyntaxTree tree, TextDocument textDoc)
         {
             await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
@@ -1234,6 +1249,17 @@ namespace COMET
 
             dte.Documents.SaveAll();
         }
+
+        /// <METHOD name="allEnums">
+        /// <Purpose> 
+        ///  Locates all Enums in the document and generates comments for them
+        /// </Purpose>
+        /// <Parameters> 
+        ///     dte(DTE2):
+        ///     tree(SyntaxTree):
+        ///     textDoc(TextDocument):
+        /// </Parameters>
+        /// </METHOD>
         private async void allEnums(DTE2 dte, SyntaxTree tree, TextDocument textDoc)
         {
             await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
@@ -1255,6 +1281,16 @@ namespace COMET
             dte.Documents.SaveAll();
         }
 
+        /// <METHOD name="allStructs">
+        /// <Purpose> 
+        ///  Locates all Structs in the document and generates comments for them
+        /// </Purpose>
+        /// <Parameters> 
+        ///     dte(DTE2):
+        ///     tree(SyntaxTree):
+        ///     textDoc(TextDocument):
+        /// </Parameters>
+        /// </METHOD>
         private async void allStructs(DTE2 dte, SyntaxTree tree, TextDocument textDoc)
         {
             await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
@@ -1273,6 +1309,16 @@ namespace COMET
             dte.Documents.SaveAll();
         }
 
+        /// <METHOD name="allNamespace">
+        /// <Purpose> 
+        ///  Locate all Namespaces in the document and generates comments for them
+        /// </Purpose>
+        /// <Parameters> 
+        ///     dte(DTE2):
+        ///     tree(SyntaxTree):
+        ///     textDoc(TextDocument):
+        /// </Parameters>
+        /// </METHOD>
         private async void allNamespace(DTE2 dte, SyntaxTree tree, TextDocument textDoc)
         {
             SettingsManager sm = new SettingsManager();
@@ -1294,6 +1340,16 @@ namespace COMET
             dte.Documents.SaveAll();
         }
 
+        /// <METHOD name="allObjAttributes">
+        /// <Purpose> 
+        ///  Locates all Object Attributes in the document and generates comments for them
+        /// </Purpose>
+        /// <Parameters> 
+        ///     dte(DTE2):
+        ///     tree(SyntaxTree):
+        ///     textDoc(TextDocument):
+        /// </Parameters>
+        /// </METHOD>
         private async void allObjAttributes(DTE2 dte, SyntaxTree tree, TextDocument textDoc)
         {
             SettingsManager sm = new SettingsManager();
@@ -1315,6 +1371,15 @@ namespace COMET
             dte.Documents.SaveAll();
         }
 
+        /// <METHOD name="HasXmlDocumentation">
+        /// <Purpose> 
+        ///  Checks to see if the node has XML documentation above it
+        /// </Purpose>
+        /// <Parameters> 
+        ///     node(SyntaxNode):
+        ///     expectedTag(string):
+        /// </Parameters>
+        /// </METHOD>
         private bool HasXmlDocumentation(SyntaxNode node, string expectedTag = null)
         {
             var trivia = node.GetLeadingTrivia();
@@ -1336,7 +1401,15 @@ namespace COMET
             return false;
         }
 
-
+        /// <METHOD name="InsertMethodComment">
+        /// <Purpose> 
+        ///  Inserts a comment for the method
+        /// </Purpose>
+        /// <Parameters> 
+        ///     method(MethodDeclarationSyntax):
+        ///     allowOverwrite(bool):
+        /// </Parameters>
+        /// </METHOD>
         public async void InsertMethodComment(MethodDeclarationSyntax method, bool allowOverwrite = false)
         {
             SettingsManager sm = new SettingsManager();
@@ -1469,7 +1542,31 @@ namespace COMET
             
         }
 
-
+        /// <METHOD name="BuildMethodCommentText">
+        /// <Purpose> 
+        ///  Builds the comment text for the method
+        /// </Purpose>
+        /// <Parameters> 
+        ///     sm(SettingsManager):
+        ///     methodName(string):
+        ///     indent(string):
+        ///     paramStr(string):
+        ///     typeStr(string):
+        ///     wired(List<string>):
+        ///     handles(List<string>):
+        ///     thrown(List<string>):
+        ///     caught(List<string>):
+        ///     documentPath(string):
+        ///     userTexts(List<string>):
+        ///     correctWired(string):
+        ///     correctHandles(string):
+        ///     correctThrown(string):
+        ///     correctCaught(string):
+        /// </Parameters>
+        /// <Event_Raised> 
+        ///     comment:
+        /// </Event_Raised>
+        /// </METHOD>
         private string BuildMethodCommentText(SettingsManager sm, string methodName, string indent,
      string paramStr, string typeStr, List<string> wired, List<string> handles, List<string> thrown, List<string> caught, string documentPath,
      List<string> userTexts, string correctWired,string correctHandles, string correctThrown, string correctCaught)
@@ -1586,12 +1683,31 @@ namespace COMET
             return comment;
         }
 
-
+        /// <METHOD name="NormalizeComment">
+        /// <Purpose> 
+        ///  Replaces all spaces, tabs, new lines and carriage returns with empty strings
+        /// </Purpose>
+        /// <Parameters> 
+        ///     comment(string):
+        /// </Parameters>
+        /// </METHOD>
         private string NormalizeComment(string comment)
         {
             return comment.Replace(" ", "").Replace("\t", "").Replace("\n", "").Replace("\r", "").ToLowerInvariant();
         }
 
+        /// <METHOD name="InsertPropertyComment">
+        /// <Purpose> 
+        ///  Inserts the Object Property comment
+        /// </Purpose>
+        /// <Parameters> 
+        ///     prop(PropertyDeclarationSyntax):
+        ///     allowOverwrite(bool):
+        /// </Parameters>
+        /// <Event_Raised> 
+        ///     comment:
+        /// </Event_Raised>
+        /// </METHOD>
         public void InsertPropertyComment(PropertyDeclarationSyntax prop, bool allowOverwrite = false)
         {
             SettingsManager sm = new SettingsManager();
@@ -1680,21 +1796,21 @@ namespace COMET
             }
         }
 
-        private string BuildPropertyCommentText(SettingsManager sm, string propName, string indent)
-        {
-            string comment = indent + $@"/// <PROPERTY name=""{propName}"">" + "\n";
-            if (sm.getToggle("toggleOBJCB"))
-                comment += indent + $@"/// <{settings.getName("Created By")} name=""{settings.getInitials()}"" date=""{DateTime.Now:MM/dd/yyyy}""> </{settings.getName("Created By")}>" + "\n";
-            if (sm.getToggle("toggleOBJPurpose"))
-                comment += indent + $"/// <{settings.getName("Purpose")}> </{settings.getName("Purpose")}>\n";
-            if (sm.getToggle("toggleOBJRH"))
-                comment += indent + $"/// <{settings.getName("Revise History")}> </{settings.getName("Revise History")}>\n";
-
-            comment += indent + "/// </PROPERTY>\n" + indent;
-            return comment;
-        }
-
-
+        /// <METHOD name="ExtractInnerTagContent">
+        /// <Purpose> 
+        ///  Pulls the contents of the inner tag
+        /// </Purpose>
+        /// <Parameters> 
+        ///     textDoc(TextDocument):
+        ///     startLine(int):
+        ///     fallbackTag(string):
+        ///     currentTag(string):
+        /// </Parameters>
+        /// <Event_Raised> 
+        ///     content:
+        ///     content:
+        /// </Event_Raised>
+        /// </METHOD>
         private string ExtractInnerTagContent(TextDocument textDoc, int startLine, string fallbackTag, string currentTag)
         {
             string content = "";
@@ -1758,6 +1874,17 @@ namespace COMET
             return content;
         }
 
+        /// <METHOD name="ExtractInnerTagContentHelper">
+        /// <Purpose> 
+        ///  Pulls the contents of the inner tag
+        /// </Purpose>
+        /// <Parameters> 
+        ///     textDoc(TextDocument):
+        ///     startLine(int):
+        ///     fallbackTag(string):
+        ///     currentTag(string):
+        /// </Parameters>
+        /// </METHOD>
         private string ExtractInnerTagContentHelper(TextDocument textDoc, int startLine, string fallbackTag, string currentTag)
         {
             var lines = new List<string>();
@@ -1791,6 +1918,15 @@ namespace COMET
             return string.Join("\n", lines);
         }
 
+        /// <METHOD name="convertDynamicToXMLFormatHelper">
+        /// <Purpose> 
+        ///  Formats the user text to XML format
+        /// </Purpose>
+        /// <Parameters> 
+        ///     userText(string):
+        ///     indent(string):
+        /// </Parameters>
+        /// </METHOD>
         private string convertDynamicToXMLFormatHelper(string userText, string indent)
         {
             if (string.IsNullOrWhiteSpace(userText))
@@ -1804,7 +1940,18 @@ namespace COMET
             }));
         }
 
-
+        /// <METHOD name="InsertClassComment">
+        /// <Purpose> 
+        ///  Inserts the Class comment
+        /// </Purpose>
+        /// <Parameters> 
+        ///     cls(ClassDeclarationSyntax):
+        ///     allowOverwrite(bool):
+        /// </Parameters>
+        /// <Event_Raised> 
+        ///     comment:
+        /// </Event_Raised>
+        /// </METHOD>
         public async void InsertClassComment(ClassDeclarationSyntax cls, bool allowOverwrite = false)
         {
             SettingsManager sm = new SettingsManager();
@@ -1898,6 +2045,18 @@ namespace COMET
             }
         }
 
+        /// <METHOD name="InsertEnumComment">
+        /// <Purpose> 
+        ///  Inserts Enum comment
+        /// </Purpose>
+        /// <Parameters> 
+        ///     en(EnumDeclarationSyntax):
+        ///     allowOverwrite(bool):
+        /// </Parameters>
+        /// <Event_Raised> 
+        ///     comment:
+        /// </Event_Raised>
+        /// </METHOD>
         public void InsertEnumComment(EnumDeclarationSyntax en, bool allowOverwrite = false)
         {
             SettingsManager sm = new SettingsManager();
@@ -1977,21 +2136,17 @@ namespace COMET
             }
         }
 
-        private string BuildEnumCommentText(SettingsManager sm, string name, string indent)
-        {
-            string comment = indent + $@"/// <ENUM name=""{name}"">" + "\n";
-
-            if (sm.getToggle("toggleEnumCB"))
-                comment += indent + $@"/// <{settings.getName("Created By")} name=""{settings.getInitials()}"" date=""{DateTime.Now:MM/dd/yyyy}""> </{settings.getName("Created By")}>" + "\n";
-            if (sm.getToggle("toggleEnumPurpose"))
-                comment += indent + $"/// <{settings.getName("Purpose")}> </{settings.getName("Purpose")}>\n";
-            if (sm.getToggle("toggleEnumRH"))
-                comment += indent + $"/// <{settings.getName("Revise History")}> </{settings.getName("Revise History")}>\n";
-
-            comment += indent + "/// </ENUM>\n" + indent;
-            return comment;
-        }
-
+        /// <METHOD name="InsertStructComment">
+        /// <Purpose> 
+        ///  Inserts Struct comment
+        /// </Purpose>
+        /// <Parameters> 
+        ///     structNode(StructDeclarationSyntax):
+        /// </Parameters>
+        /// <Event_Raised> 
+        ///     comment:
+        /// </Event_Raised>
+        /// </METHOD>
         public async void InsertStructComment(StructDeclarationSyntax structNode)
         {
             await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
@@ -2082,37 +2237,18 @@ namespace COMET
             }
         }
 
-        private string BuildStructCommentText(SettingsManager sm, string structName, string indent,
-            List<string> handled, List<string> raised, List<string> thrown, List<string> caught)
-        {
-            string comment = indent + $@"/// <STRUCTURE name=""{structName}"">" + "\n";
-
-            if (sm.getToggle("toggleStructCB"))
-                comment += indent + $@"/// <{settings.getName("Created By")} name=""{settings.getInitials()}"" date=""{DateTime.Now:MM/dd/yyyy}""> </{settings.getName("Created By")}>" + "\n";
-
-            if (sm.getToggle("toggleStructPurpose"))
-                comment += indent + $"/// <{settings.getName("Purpose")}> </{settings.getName("Purpose")}>\n";
-
-            if (sm.getToggle("toggleStructEvents") && (handled.Any() || raised.Any()))
-            {
-                comment += indent + $"/// <{sm.getName("Events Handled")}> {string.Join(", ", handled)} </{sm.getName("Events Handled")}>\n";
-                comment += indent + $"/// <{sm.getName("Event Raised")}>   {string.Join(", ", raised)}  </{sm.getName("Event Raised")}>  \n";
-            }
-
-            if (sm.getToggle("toggleStructExcepts") && (thrown.Any() || caught.Any()))
-            {
-                comment += indent + $"/// <{sm.getName("Exception Thrown")}> {string.Join(", ", thrown)} </{sm.getName("Exception Thrown")}>\n";
-                comment += indent + $"/// <{sm.getName("Exception Caught")}> {string.Join(", ", caught)} </{sm.getName("Exception Caught")}>\n";
-            }
-
-            if (sm.getToggle("toggleStructRH"))
-                comment += indent + $"/// <{settings.getName("Revise History")}> </{settings.getName("Revise History")}>\n";
-
-            comment += indent + "/// </STRUCTURE>\n" + indent;
-            return comment;
-        }
-
-
+        /// <METHOD name="InsertNamespaceComment">
+        /// <Purpose> 
+        ///  Inserts Namespace comment
+        /// </Purpose>
+        /// <Parameters> 
+        ///     ns(NamespaceDeclarationSyntax):
+        ///     allowOverwrite(bool):
+        /// </Parameters>
+        /// <Event_Raised> 
+        ///     comment:
+        /// </Event_Raised>
+        /// </METHOD>
         public void InsertNamespaceComment(NamespaceDeclarationSyntax ns, bool allowOverwrite = false)
         {
             var dte = getDTE();
@@ -2187,8 +2323,17 @@ namespace COMET
             dte.Documents.SaveAll();
         }
 
-
-
+        /// <METHOD name="InsertFlowerbox">
+        /// <Purpose> 
+        ///  Insert a flowerbox comment at the top of the file
+        /// </Purpose>
+        /// <Parameters> 
+        ///
+        /// </Parameters>
+        /// <Event_Raised> 
+        ///     comment:
+        /// </Event_Raised>
+        /// </METHOD>
         public async Task InsertFlowerbox()
         {
             await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
@@ -2320,14 +2465,18 @@ namespace COMET
             insertPoint.Insert(comment);
 
             dte.Documents.SaveAll();
-        } 
+        }
 
-
-
-
-
-
-
+        /// <METHOD name="GetHandledEvents">
+        /// <Purpose> 
+        ///  Confirms if the event handler method is wired to any events
+        /// </Purpose>
+        /// <Parameters> 
+        ///     eventHandlerMethod(MethodDeclarationSyntax):
+        ///     sourceFilePath(string):
+        ///     handledEvents(List<string>):
+        /// </Parameters>
+        /// </METHOD>
         public bool GetHandledEvents(MethodDeclarationSyntax eventHandlerMethod, string sourceFilePath, out List<string> handledEvents)
         {
             // Initialize the output list
@@ -2378,7 +2527,15 @@ namespace COMET
             return handledEvents.Any();
         }
 
-        // Helper method to determine if an expression references the event handler method
+        /// <METHOD name="IsEventHandlerReference">
+        /// <Purpose> 
+        ///  Checks if the expression is a reference to the event handler method
+        /// </Purpose>
+        /// <Parameters> 
+        ///     expression(ExpressionSyntax):
+        ///     methodName(string):
+        /// </Parameters>
+        /// </METHOD>
         private bool IsEventHandlerReference(ExpressionSyntax expression, string methodName)
         {
             // Case 1: Simple identifier (e.g., "Button1_Click")
@@ -2394,6 +2551,16 @@ namespace COMET
             // If neither, it's not a match
             return false;
         }
+
+        /// <METHOD name="doesWireEventHandler">
+        /// <Purpose> 
+        ///  Checks if the method wires any event handlers
+        /// </Purpose>
+        /// <Parameters> 
+        ///     method(MethodDeclarationSyntax):
+        ///     wiredEvents(List<string>):
+        /// </Parameters>
+        /// </METHOD>
         public bool doesWireEventHandler(MethodDeclarationSyntax method, out List<string> wiredEvents)
         {
             // Analyze the method's syntax tree to find += assignments
@@ -2408,6 +2575,21 @@ namespace COMET
             return wiredEvents.Count > 0;
         }
 
+        /// <METHOD name="attachTypesToParams">
+        /// <Purpose> 
+        ///  Attaches types to parameters in the XML comment
+        /// </Purpose>
+        /// <Parameters> 
+        ///     paramString(string):
+        ///     typeString(string):
+        ///     indent(string):
+        /// </Parameters>
+        /// <Event_Raised> 
+        ///     result:
+        ///     result:
+        ///     result:
+        /// </Event_Raised>
+        /// </METHOD>
         public string attachTypesToParams(string paramString, string typeString, string indent)
         {
 
@@ -2430,10 +2612,34 @@ namespace COMET
             result += indent + "///";
             return result;
         }
+
+        /// <METHOD name="removeNewLines">
+        /// <Purpose> 
+        ///  Removes new lines from the input string
+        /// </Purpose>
+        /// <Parameters> 
+        ///     input(string):
+        /// </Parameters>
+        /// </METHOD>
         public string removeNewLines(string input)
         {
             return input.Replace("\n", "");
         }
+
+        /// <METHOD name="convertExecptionToXML">
+        /// <Purpose> 
+        ///  Converts exception list to XML format
+        /// </Purpose>
+        /// <Parameters> 
+        ///     exceptionList(List<string>):
+        ///     indent(string):
+        /// </Parameters>
+        /// <Event_Raised> 
+        ///     result:
+        ///     result:
+        ///     result:
+        /// </Event_Raised>
+        /// </METHOD>
         public string convertExecptionToXML(List<string> exceptionList, string indent)
         {
 
@@ -2455,6 +2661,20 @@ namespace COMET
             return result;
         }
 
+        /// <METHOD name="convertEventsToXML">
+        /// <Purpose> 
+        ///  Converts event list to XML format
+        /// </Purpose>
+        /// <Parameters> 
+        ///     wires(List<string>):
+        ///     indent(string):
+        /// </Parameters>
+        /// <Event_Raised> 
+        ///     result:
+        ///     result:
+        ///     result:
+        /// </Event_Raised>
+        /// </METHOD>
         public string convertEventsToXML(List<string> wires, string indent)
         {
             string result = "";
@@ -2475,6 +2695,15 @@ namespace COMET
 
         }
 
+        /// <METHOD name="findAndReplaceXML">
+        /// <Purpose> 
+        ///  Updates XML tags in the current document
+        /// </Purpose>
+        /// <Parameters> 
+        ///     previous(string):
+        ///     current(string):
+        /// </Parameters>
+        /// </METHOD>
         public void findAndReplaceXML(string previous, string current)
         {
             ThreadHelper.ThrowIfNotOnUIThread();
@@ -2491,6 +2720,21 @@ namespace COMET
             find.Execute();
 
         }
+
+        /// <METHOD name="convertDynamicToXMLFormat">
+        /// <Purpose> 
+        ///  Converts dynamic text to XML format
+        /// </Purpose>
+        /// <Parameters> 
+        ///     userText(string):
+        ///     indent(string):
+        /// </Parameters>
+        /// <Event_Raised> 
+        ///     result:
+        ///     result:
+        ///     result:
+        /// </Event_Raised>
+        /// </METHOD>
         public string convertDynamicToXMLFormat(string userText,string indent)
         {
             string filteredUserText = ReplaceTripleSlash(userText);
@@ -2513,6 +2757,21 @@ namespace COMET
             return result;
 
         }
+
+        /// <METHOD name="convertXMLStringToMultiLine">
+        /// <Purpose> 
+        ///  Convert XML string to multi-line format
+        /// </Purpose>
+        /// <Parameters> 
+        ///     input(string):
+        ///     indent(string):
+        /// </Parameters>
+        /// <Event_Raised> 
+        ///     result:
+        ///     result:
+        ///     result:
+        /// </Event_Raised>
+        /// </METHOD>
         public string convertXMLStringToMultiLine(string input,string indent)
         {
             string updated = ReplaceTripleSlash(input);
@@ -2534,12 +2793,30 @@ namespace COMET
             result += indent + "///";
             return result;
         }
+
+        /// <METHOD name="ReplaceTripleSlash">
+        /// <Purpose> 
+        ///  Replaces triple slashes with a backtick
+        /// </Purpose>
+        /// <Parameters> 
+        ///     input(string):
+        /// </Parameters>
+        /// </METHOD>
         public static string ReplaceTripleSlash(string input)
         {
             string updated = input.Replace("///", "`");
             return updated;
         }
-      
+
+        /// <METHOD name="btnUpdateAllTags_Click">
+        /// <Purpose> 
+        ///  Updates all tags in the current document
+        /// </Purpose>
+        /// <Parameters> 
+        ///     sender(object):
+        ///     e(RoutedEventArgs):
+        /// </Parameters>
+        /// </METHOD>
         private void btnUpdateAllTags_Click(object sender, RoutedEventArgs e)
         {
             SettingsManager sm = new SettingsManager();

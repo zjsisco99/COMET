@@ -4,25 +4,64 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+/// <FLOWERBOX file="EventsExceptionsUpdater.cs">
+/// <Created_By>
+/// COMET DEV TEAM
+/// </Created_By>
+/// <Purpose>
+/// Update events and exceptions in the code.
+/// </Purpose>
+/// <Revise_History>
+/// 4/27/2025 - Initial release
+/// </Revise_History>
+/// </FLOWERBOX>
 
+/// <NAMESPACE name="COMET.Resources">
+/// <Purpose>
+///
+/// </Purpose>
+/// </NAMESPACE>
 namespace COMET.Resources
 {
+   /// <CLASS name="EventsUpdater">
+   /// <Purpose>
+   /// Class for EventsUpdater
+   /// </Purpose>
+   /// </CLASS>
     public class EventsUpdater
     {
+       /// <CLASS name="Event">
+       /// <Purpose>
+       /// Class for Event
+       /// </Purpose>
+       /// </CLASS>
         public class Event
         {
+           /// <PROPERTY name="Name">
+           /// <Purpose>
+           ///  Name of Event
+           /// </Purpose>
+           /// </PROPERTY>
             public string Name { get; set; }
+
+            /// <PROPERTY name="Description">
+            /// <Purpose>
+            ///  Description of Event
+            /// </Purpose>
+            /// </PROPERTY>
             public List<string> Description { get; set; } = new List<string>();
         }
 
-        /// <summary>
-        /// Updates the XML documentation comment's Events tag based on the provided current and updated event inputs.
-        /// Assumes currentEvents is a string with entries prefixed by '///', and updatedEvents is a list of event names.
-        /// </summary>
-        /// <param name="currentEvents">Text for current events, e.g., "/// button1.Click: the text/// more text/// Load: thee text/// more text".</param>
-        /// <param name="updatedEvents">List of updated event names, e.g., ["newButton1.Click", "Load"].</param>
-        /// <param name="indent">The indentation string to use for formatting, e.g., "    ".</param>
-        /// <returns>The complete updated event lines with newlines added.</returns>
+       /// <METHOD name="UpdateEvents">
+       /// <Purpose> 
+       ///  Updates the comment for events in the code.
+       /// </Purpose>
+       /// <Parameters>
+       ///    currentEvents(string):
+       ///    updatedEvents(List<string>):
+       ///    indent(string):
+       /// </Parameters>
+       /// </METHOD>
         public static string UpdateEvents(string currentEvents, List<string> updatedEvents, string indent)
         {
             List<Event> ParseCurrentEvents(string eventsText)

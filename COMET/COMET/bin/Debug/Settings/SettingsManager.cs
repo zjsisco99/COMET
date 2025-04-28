@@ -13,17 +13,54 @@ using System.Drawing;
 using System.Windows.Media;
 using Color = System.Windows.Media.Color;
 using System.Diagnostics;
+/// <FLOWERBOX file="SettingsManager.cs">
+/// <Created_By>
+/// COMET DEV TEAM
+/// </Created_By>
+/// <Purpose>
+/// Controls the settings for the COMET extension.
+/// </Purpose>
+/// <Revise_History>
+/// 4/27/2025 - Initial release
+/// </Revise_History>
+/// </FLOWERBOX>
 
+/// <NAMESPACE name="COMET.Settings">
+/// <Purpose>
+/// Namespace for the COMET extension settings.
+/// </Purpose>
+/// </NAMESPACE>
 namespace COMET.Settings
 {
+    /// <CLASS name="SettingsManager">
+    /// <Purpose>
+    /// Creates instance of the settings manager.
+    /// </Purpose>
+    /// </CLASS>
     internal class SettingsManager
     {
         static readonly string APP_DATA_DIRECTORY = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "COMET", "Settings");
         static readonly string SETTINGS_FILE = Path.Combine(APP_DATA_DIRECTORY, "settings.json");
 
+       /// <PROPERTY name="settingsFullName">
+       /// <Purpose>
+       /// UNUSED
+       /// </Purpose>
+       /// </PROPERTY>
         public string settingsFullName { get; set; } = default;
+
+       /// <PROPERTY name="settingsInitials">
+       /// <Purpose>
+       /// USERNAME
+       /// </Purpose>
+       /// </PROPERTY>
         public string settingsInitials { get; set; } = default;
 
+       /// <PROPERTY name="names">
+       /// <Purpose>
+       /// TAG NAMES
+       /// </Purpose>
+       /// </PROPERTY>
         public Dictionary<string, string> names { get; set; } = new Dictionary<string, string>
             {
                 {"Created By", "Created_By"},
@@ -35,6 +72,11 @@ namespace COMET.Settings
                 {"Revise History", "Revise_History"}
             };
         
+       /// <PROPERTY name="colors">
+       /// <Purpose>
+       /// TAG COLORS
+       /// </Purpose>
+       /// </PROPERTY>
         public Dictionary<string, string> colors { get; set; } = new Dictionary<string, string>
         {
                 {"InnerTag", "#FFB2CAB2"},
@@ -43,6 +85,11 @@ namespace COMET.Settings
                 {"UserText", "#ffffff"},
         };
 
+        /// <PROPERTY name="toggles">
+        /// <Purpose>
+        /// TAG TOGGLES
+        /// </Purpose>
+        /// </PROPERTY>
         public Dictionary<string, bool> toggles { get; set; } = new Dictionary<string, bool>
         {
             {"toggleNamespaceCB", true },
@@ -72,11 +119,27 @@ namespace COMET.Settings
             {"toggleStructRH", true }
         };
 
+        /// <METHOD name="SettingsManager">
+        /// <Purpose> 
+        /// Creates instance of the settings manager.
+        /// </Purpose>
+        /// <Parameters> 
+        /// 
+        /// </Parameters>
+        /// </METHOD>
         public SettingsManager()
         {
             CheckDirectory(APP_DATA_DIRECTORY);
         }
 
+        /// <METHOD name="CheckDirectory">
+        /// <Purpose> 
+        /// Checks if the AppData directory exists. If not, creates it.
+        /// </Purpose>
+        /// <Parameters>
+        ///    directory(string):
+        /// </Parameters>
+        /// </METHOD>
         public void CheckDirectory(string directory)
         {
             DirectoryInfo di = new DirectoryInfo(directory);
@@ -92,18 +155,14 @@ namespace COMET.Settings
             }
         }
 
-        /// <summary>
-        /// Description:
-        /// Reads the Settings JSON file and loads the settings into the GUI
-        /// ==========================================
-        /// Called By: 
-        /// ToolWindow1Control
-        /// ==========================================
-        /// Revision History:
-        /// date        who     description
-        /// ================================
-        /// 2/9/2025   zs      inital creation
-        /// </summary>
+        /// <METHOD name="LoadSettings">
+        /// <Purpose> 
+        /// Loads the settings from the AppData directory.
+        /// </Purpose>
+        /// <Parameters> 
+        ///
+        /// </Parameters>
+        /// </METHOD>
         public void LoadSettings()
         {
             //read JSON
@@ -123,17 +182,14 @@ namespace COMET.Settings
             this.toggles = (Dictionary<string, bool>)contents.GetType().GetProperty("toggles").GetValue(contents);
         }
 
-        /// <summary>
-        /// Description:
-        /// Saves the Settings OBJ to the Settings JSON file
-        /// ==========================================
-        /// Called By: 
-        /// ==========================================
-        /// Revision History:
-        /// date        who     description
-        /// ================================
-        /// 2/9/2025   zs      inital creation
-        /// </summary>
+       /// <METHOD name="SaveSettings">
+       /// <Purpose> 
+       /// Saves the settings in the AppData directory
+       /// </Purpose>
+       /// <Parameters> 
+       ///
+       /// </Parameters>
+       /// </METHOD>
         public void SaveSettings()
         {
             //write JSON
@@ -144,6 +200,14 @@ namespace COMET.Settings
             File.WriteAllText(fullPath, jsonString);
         }
 
+        /// <METHOD name="DefaultSettings">
+        /// <Purpose> 
+        ///  Sets the default settings for the COMET extension.
+        /// </Purpose>
+        /// <Parameters> 
+        ///
+        /// </Parameters>
+        /// </METHOD>
         public void DefaultSettings()
         {
             this.setFullName(string.Empty);
@@ -188,51 +252,134 @@ namespace COMET.Settings
             this.SaveSettings();
         }
 
+       /// <METHOD name="getFullName">
+       /// <Purpose> 
+       ///  UNUSED  
+       /// </Purpose>
+       /// <Parameters> 
+       ///
+       /// </Parameters>
+       /// </METHOD>
         public string getFullName()
         {
             return this.settingsFullName;
         }
 
+        /// <METHOD name="setFullName">
+        /// <Purpose> 
+        ///  UNUSED
+        /// </Purpose>
+        /// <Parameters>
+        ///    fullName(string):
+        /// </Parameters>
+        /// </METHOD>
         public void setFullName(string fullName)
         {
             this.settingsFullName = fullName;
         }
-        
+
+        /// <METHOD name="getInitials">
+        /// <Purpose> 
+        ///  Get Username
+        /// </Purpose>
+        /// <Parameters> 
+        ///
+        /// </Parameters>
+        /// </METHOD>
         public string getInitials()
         {
             return this.settingsInitials;
         }
 
+       /// <METHOD name="setInitials">
+       /// <Purpose> 
+       ///  Set Username
+       /// </Purpose>
+       /// <Parameters>
+       ///    initials(string):
+       /// </Parameters>
+       /// </METHOD>
         public void setInitials(string initials)
         {
             this.settingsInitials = initials;
         }
 
+        /// <METHOD name="getColor">
+        /// <Purpose> 
+        ///  Get Color dictionary option
+        /// </Purpose>
+        /// <Parameters>
+        ///    color(string):
+        /// </Parameters>
+        /// </METHOD>
         public Color getColor(string color)
         {
             return (Color)System.Windows.Media.ColorConverter.ConvertFromString(this.colors[color]);
         }
 
+        /// <METHOD name="setColor">
+        /// <Purpose> 
+        ///  Set color dictionary option
+        /// </Purpose>
+        /// <Parameters>
+        ///    option(string):
+        ///    color(string):
+        /// </Parameters>
+        /// </METHOD>
         public void setColor(string option, string color)
         {
             this.colors[option] = color;
         }
 
+        /// <METHOD name="getName">
+        /// <Purpose> 
+        ///  Get name dictionary option
+        /// </Purpose>
+        /// <Parameters>
+        ///    option(string):
+        /// </Parameters>
+        /// </METHOD>
         public string getName(string option)
         {
             return this.names[option];
         }
 
+        /// <METHOD name="setName">
+        /// <Purpose> 
+        ///  set name dictionary option
+        /// </Purpose>
+        /// <Parameters>
+        ///    option(string):
+        ///    name(string):
+        /// </Parameters>
+        /// </METHOD>
         public void setName(string option, string name)
         {
             this.names[option] = name;
         }
 
+        /// <METHOD name="getToggle">
+        /// <Purpose> 
+        ///  get toggle dictionary option
+        /// </Purpose>
+        /// <Parameters>
+        ///    option(string):
+        /// </Parameters>
+        /// </METHOD>
         public bool getToggle(string option)
         {
             return this.toggles[option];
         }
 
+        /// <METHOD name="setToggle">
+        /// <Purpose> 
+        ///  set toggle dictionary option
+        /// </Purpose>
+        /// <Parameters>
+        ///    option(string):
+        ///    toggle(bool):
+        /// </Parameters>
+        /// </METHOD>
         public void setToggle(string option, bool toggle)
         {
             this.toggles[option] = toggle;
